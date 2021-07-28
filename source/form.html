@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="page" lang="ru en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <span class="page-header__title company-name">cat energy</span>
+      <a class="page-header__logo" href="../source/index.html">
+        <img src="../source/img/decorative/logo-mobile.png" width="33" height="38" alt="логотип магазина «cat energy»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="../source/index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="../source/catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="../source/form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="program-selection">
+        <div class="program-selection__header">
+          <h1>Подбор программы</h1>
+          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
+        <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-text-field">
+                <input class="program-text-field__input" type="text" name="name" id="name-id" placeholder="Барсик">
+                <label class="program-text-field__label" for="name-id">Имя:*</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-text-field">
+                <input class="program-text-field__input" type="text" name="weight" id="weight-id" placeholder="7">
+                <label class="program-text-field__label" for="weight-id">Вес (КГ):*</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-text-field">
+                <input class="program-text-field__input" type="text" name="age" id="age-id" placeholder="7">
+                <label class="program-text-field__label" for="age-id">Возраст (ЛЕТ):</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="losing-weight-id" value="lose-weight">
+                <label class="program-radio__label" for="losing-weight-id">Похудение</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="gaining-muscle-id" value="gain-muscle">
+                <label class="program-radio__label" for="gaining-muscle-id">Набор массы</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="advice-id" value="need-advice">
+                <label class="program-radio__label" for="advice-id">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="program-fieldset__legend">Контактные данные (владельца кота)</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-text-field program-text-field--email">
+                <label class="program-text-field__label" for="email-id">e-mail:*</label>
+                <input class="program-text-field__input" type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="program-fieldset__parameters-item program-text-field program-text-field--phone">
+                <label class="program-text-field__label" for="phone-id">телефон:*</label>
+                <input class="program-text-field__input" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
+              </li>
+          </ul>
+          </fieldset>
+          <fieldset class="program-form__fieldset comment">
+            <legend class="comment__legend">Комментарий</legend>
+            <label class="comment__label">
+              <textarea class="comment__textarea" name="comment"cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </fieldset>
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="program-fieldset__legend">Дополнительно</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-checkbox">
+                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="sweetener-id" value="sweetener">
+                <label class="program-checkbox__label" for="sweetener-id">сахарозаменитель</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-checkbox">
+                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="water-id" value="water">
+                <label class="program-checkbox__label" for="water-id">питьевая вода</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-checkbox">
+                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="milk-id" value="milk">
+                <label class="program-checkbox__label" for="milk-id">молоко</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-checkbox">
+                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="vitamins-id" value="vitamins">
+                <label class="program-checkbox__label" for="vitamins-id">витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="program-form__button button" type="submit">отправить заявку</button>
+          <p class="program-form__footnote">* — Обязательные поля</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__contacts">
+        <p>приглашаем к сотрудничеству дилеров!</p>
+        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.</address>
+      </div>
+      <a class="page-footer__map" href="#"><span class="visually-hidden">местоположение офиса</span></a>
+      <span class="page-footer__title company-name">cat energy</span>
+      <div class="page-footer__socials socials">
+        <a href="#" class="socials__link socials__link--vk"><span class="visually-hidden">vkontakte</span></a>
+        <a href="#" class="socials__link socials__link--inst"><span class="visually-hidden">instagramm</span></a>
+        <a href="#" class="socials__link socials__link--fb"><span class="visually-hidden">Facebook</span></a>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
