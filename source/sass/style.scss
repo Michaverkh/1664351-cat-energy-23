@@ -10,8 +10,28 @@
 @import "global/page-body.scss";
 @import "global/page-footer.scss";
 @import "global/page-header.scss";
+@import "global/page-main.scss";
 @import "global/socials.scss";
+@import "global/visually-hidden.scss";
 
 // Blocks
 
-
+@import "blocks/cat-slider.scss";
+@import "blocks/example.scss";
+@import "blocks/how-its-working";
+@import "blocks/program";
+@import "blocks/programs";
+@import "blocks/range-control";
+@import "blocks/results-list";
+@import "blocks/item-composition.scss";
+@import "blocks/page-main-catalog.scss";
+@import "blocks/goods.scss";
+@import "blocks/parameters-table.scss";
+@import "blocks/item-product.scss";
+@import "blocks/show-more.scss";
+@import "blocks/additional-goods.scss";
+@import "blocks/good-item.scss";
+@import "blocks/order-all.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/program-form.scss";
+@import "blocks/program-fieldset.scss";

@@ -1,4 +1,6 @@
-.programs__list {
+.goods__list {
   list-style: none;
   @include indent-reset;
+  outline: 1px solid blue;
 }
+

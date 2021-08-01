@@ -1,0 +1,35 @@
+.page-footer {
+  padding-top: 28px;
+  outline: 2px solid yellow;
+}
+
+.page-footer__contacts p{
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  @include indent-reset;
+}
+
+.page-footer__contacts address {
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  @include indent-reset;
+}
+
+.page-footer__map {
+  @include indent-reset;
+}
+
+.page-footer__wrapper {
+  background-color: $basic-gray;
+}

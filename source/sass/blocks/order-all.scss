@@ -1,0 +1,23 @@
+.order-all {
+  background: url(../img/decorative/gift-photo-mobile.png) center no-repeat;
+  background-size: cover;
+  min-height: 289px;
+}
+
+.order-all__icon {
+  width: 78px;
+  height: 80px;
+  background: url(../img/decorative/icon_gift.svg) center no-repeat;
+}
+
+.order-all__text {
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $basic-background;
+
+}

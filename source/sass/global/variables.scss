@@ -1,0 +1,11 @@
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin centering {
+  margin: {
+   left: auto;
+   right: auto;
+  }
+}
