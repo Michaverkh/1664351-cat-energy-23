@@ -1,6 +1,6 @@
 .example {
   background-color: $basic-gray;
-  outline: 2px solid blue;
+  outline: 2px solid $basic-green;
 }
 
 .example__wrapper {
@@ -10,12 +10,12 @@
 
 .example__header {
   @include indent-reset;
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   color: $headers-font;
   margin-bottom: 33px;
 }

@@ -1,19 +1,16 @@
 .results-list__item span:first-child {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-transform: uppercase;
 }
 
 .results-list__item.results-list__item--spending-money span {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
-
 }

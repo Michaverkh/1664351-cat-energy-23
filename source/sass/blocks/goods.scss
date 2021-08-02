@@ -1,6 +1,6 @@
 .goods__list {
   list-style: none;
-  @include indent-reset;
-  outline: 1px solid blue;
-}
 
+  @include indent-reset;
+  outline: 1px solid $basic-green;
+}
