@@ -4,14 +4,14 @@
   height: 22px;
 }
 
-&--vk {
-  background: url("../img/decorative/icon_vkontakte.svg") center no-repeat;
+.socials__link--vk {
+  background: url("../img/decorative/icon_vk.svg") center no-repeat;
 }
 
-&--inst {
-  background: url("../img/decorative/icon_instagram.svg") center no-repeat;
+.socials__link--inst {
+  background: url("../img/decorative/icon_inst.svg") center no-repeat;
 }
 
-&--fb {
+.socials__link--fb {
   background: url("../img/decorative/icon_facebook.svg") center no-repeat;
 }

@@ -22,4 +22,12 @@
 .show-more .show-more__button {
   background-color: $basic-gray;
   color: $headers-font;
+
+  &:hover {
+    background-color: $special-gray;
+  }
+
+  &:active {
+    color: $basic-font-opacity;
+  }
 }

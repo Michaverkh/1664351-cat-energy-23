@@ -39,4 +39,12 @@
   text-decoration: none;
   width: 123px;
   background: url("../img/decorative/icon_arrow.svg") center right no-repeat;
+
+  &:hover {
+    background: url("../img/decorative/icon_arrow_long.svg") center right no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

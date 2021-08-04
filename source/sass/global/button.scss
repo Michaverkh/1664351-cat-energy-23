@@ -12,4 +12,12 @@
   background-color: $basic-green;
   width: 280px;
   padding: 7px 0;
+
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: $white-opacity;
+  }
 }
