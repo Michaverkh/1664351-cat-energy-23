@@ -1,0 +1,43 @@
+.page-footer {
+  padding-top: 28px;
+  outline: 2px solid rgb(220, 242, 24);
+}
+
+.page-footer__contacts p {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include indent-reset;
+}
+
+.page-footer__contacts address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+
+  @include indent-reset;
+}
+
+.page-footer__map {
+  @include indent-reset;
+}
+
+.page-footer__wrapper {
+  background-color: $basic-gray;
+}
+
+.page-footer__title:hover {
+  opacity: 0.8;
+}
+
+.page-footer__title:active {
+  opacity: 0.6;
+}

@@ -1,0 +1,31 @@
+.programs__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.programs__list {
+  list-style: none;
+
+  @include indent-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item {
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}

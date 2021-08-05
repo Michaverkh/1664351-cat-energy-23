@@ -1,0 +1,32 @@
+.program-fieldset {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border: none;
+
+  @include indent-reset;
+}
+
+.program-fieldset__legend {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: $headers-font;
+}
+
+.program-fieldset input {
+  border: 1px solid $border-gray;
+}
+
+.program-fieldset input::placeholder {
+  color: $basic-font;
+}
+
+.program-fieldset__parameters-list {
+  @include indent-reset;
+  list-style: none;
+}

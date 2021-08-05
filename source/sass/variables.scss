@@ -1,0 +1,15 @@
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin centering {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

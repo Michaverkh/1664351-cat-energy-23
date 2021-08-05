@@ -1,0 +1,34 @@
+.goods {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.goods__list {
+  list-style: none;
+
+  @include indent-reset;
+  outline: 1px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, min-content);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, min-content);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
