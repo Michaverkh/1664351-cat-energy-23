@@ -18,6 +18,14 @@
   color: $headers-font;
 }
 
+.program-fieldset input {
+  border: 1px solid $border-gray;
+}
+
+.program-fieldset input::placeholder {
+  color: $basic-font;
+}
+
 .program-fieldset__parameters-list {
   @include indent-reset;
   list-style: none;

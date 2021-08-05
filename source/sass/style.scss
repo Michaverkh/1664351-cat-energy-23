@@ -1,17 +1,17 @@
 // Global
-@import "global/fonts.scss";
-@import "global/colors.scss";
-@import "global/normalize";
-@import "global/variables.scss";
-@import "global/button.scss";
-@import "global/copyright.scss";
-@import "global/main-nav.scss";
-@import "global/page-body.scss";
-@import "global/page-footer.scss";
-@import "global/page-header.scss";
-@import "global/socials.scss";
-@import "global/company-name.scss";
-@import "global/visually-hidden.scss";
+@import "fonts.scss";
+@import "colors.scss";
+@import "normalize";
+@import "variables.scss";
+@import "button.scss";
+@import "copyright.scss";
+@import "main-nav.scss";
+@import "page-body.scss";
+@import "page-footer.scss";
+@import "page-header.scss";
+@import "socials.scss";
+@import "company-name.scss";
+@import "visually-hidden.scss";
 
 // Blocks
 
@@ -35,3 +35,4 @@
 @import "blocks/program-form.scss";
 @import "blocks/program-fieldset.scss";
 @import "blocks/page-main.scss";
+@import "blocks/comment.scss";

@@ -1,5 +1,4 @@
 .program {
-  width: 280px;
   min-height: 266px;
   background-color: $basic-gray;
   padding: 30px 20px 22px 20px;
@@ -41,7 +40,7 @@
   background: url("../img/decorative/icon_arrow.svg") center right no-repeat;
 
   &:hover {
-    background: url("../img/decorative/icon_arrow_long.svg") center right no-repeat;
+    background: url("../img/decorative/icon_arrow_l.svg") center right no-repeat;
   }
 
   &:active {

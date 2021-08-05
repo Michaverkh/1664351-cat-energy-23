@@ -1,3 +1,19 @@
+.results-list {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: min-content min-content;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 124px 124px auto;
+    grid-template-rows: min-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 124px 124px;
+    grid-template-rows: min-content min-content;
+  }
+}
+
 .results-list__item span:first-child {
   font-family: "Oswald", sans-serif;
   font-size: 24px;

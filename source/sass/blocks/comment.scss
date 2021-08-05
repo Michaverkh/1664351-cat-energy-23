@@ -1,0 +1,8 @@
+.comment__textarea {
+  resize: none;
+  border: 1px solid $border-gray;
+
+  &::placeholder {
+    color: $basic-font;
+  }
+}

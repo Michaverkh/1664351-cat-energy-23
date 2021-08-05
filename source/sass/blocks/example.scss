@@ -4,8 +4,16 @@
 }
 
 .example__wrapper {
-  @include centering;
-  padding: 27px 0;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .example__header {
