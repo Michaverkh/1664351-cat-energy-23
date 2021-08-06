@@ -2,7 +2,22 @@
   outline: 2px solid $basic-green;
 }
 
+.program-selection__header {
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .program-selection__header h1 {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-style: normal;
@@ -15,6 +30,7 @@
 }
 
 .program-selection__header p {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-style: normal;

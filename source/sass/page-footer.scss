@@ -1,6 +1,26 @@
 .page-footer {
-  padding-top: 28px;
+  position: relative;
   outline: 2px solid rgb(220, 242, 24);
+}
+
+.page-footer__contacts {
+  width: 280px;
+  padding: 28px 20px 26px 20px;
+  margin: 0 auto;
+  outline: 1px solid rgb(100, 100, 24);
+  background-color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 9%;
+    width: 570px;
+    margin: 0;
+  }
 }
 
 .page-footer__contacts p {
@@ -28,10 +48,30 @@
 
 .page-footer__map {
   @include indent-reset;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .page-footer__wrapper {
   background-color: $basic-gray;
+}
+
+.page-footer__grid-wrapper {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .page-footer__title:hover {

@@ -10,6 +10,7 @@
 }
 
 .program-fieldset__legend {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -29,4 +30,25 @@
 .program-fieldset__parameters-list {
   @include indent-reset;
   list-style: none;
+}
+
+.program-fieldset__parameters-list--contacts,
+.program-fieldset__parameters-list--additional,
+.program-form__button-wrapper,
+.program-fieldset__label.comment,
+.program-fieldset__legend {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
 }

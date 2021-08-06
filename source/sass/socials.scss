@@ -1,17 +1,22 @@
-.socials__link {
+.socials__link:not(.socials__link.socials__link--fb) {
   display: block;
-  width: 22px;
-  height: 22px;
+  text-decoration: none;
+
+  &:hover svg {
+    fill: $basic-green;
+  }
+
+  &:active svg {
+    opacity: 0.5;
+  }
 }
 
-.socials__link--vk {
-  background: url("../img/decorative/icon_vk.svg") center no-repeat;
-}
+.socials__link.socials__link--fb {
+  &:hover {
+    stroke: $basic-green;
+  }
 
-.socials__link--inst {
-  background: url("../img/decorative/icon_inst.svg") center no-repeat;
-}
-
-.socials__link--fb {
-  background: url("../img/decorative/icon_facebook.svg") center no-repeat;
+  &:active svg {
+    opacity: 0.5;
+  }
 }
