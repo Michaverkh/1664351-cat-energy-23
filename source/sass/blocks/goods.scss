@@ -1,6 +1,7 @@
 .goods {
   width: 280px;
   margin: 0 auto;
+  outline: 1px solid $basic-gray;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -11,8 +12,20 @@
   }
 }
 
+.goods__header {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: $headers-font;
+
+  @include indent-reset;
+}
+
 .goods__list {
   list-style: none;
+  width: 100%;
 
   @include indent-reset;
   outline: 1px solid $basic-green;
@@ -30,5 +43,12 @@
     grid-template-rows: repeat(auto-fill, min-content);
     column-gap: 80px;
     row-gap: 63px;
+  }
+}
+
+.goods__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }

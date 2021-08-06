@@ -34,3 +34,9 @@
     opacity: 0.6;
   }
 }
+
+.page-header__nav {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
