@@ -1,6 +1,10 @@
 .item-composition {
   position: relative;
-  min-height: 60px;
+  padding: 0 0 0 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 0 57px 0;
+  }
 }
 
 .item-composition::before {
@@ -33,5 +37,4 @@
 
 .item-composition p {
   @include indent-reset;
-  padding-left: 60px;
 }

@@ -1,5 +1,10 @@
 .copyright {
+  width: 100%;
   background: url("../img/decorative/logo_academy.svg") center right no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
 .copyright__link {

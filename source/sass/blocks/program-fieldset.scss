@@ -38,17 +38,15 @@
 .program-fieldset__label.comment,
 .program-fieldset__legend {
   display: block;
-  width: 280px;
-  margin: 0 auto;
   outline: 2px solid $basic-green;
 
-  @media (min-width: $tablet-width) {
-    width: 709px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1220px;
     display: flex;
     justify-content: space-between;
   }
+}
+
+.comment__textarea {
+  width: 100%;
+  box-sizing: border-box;
 }

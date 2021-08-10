@@ -1,14 +1,10 @@
 .programs__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  padding-top: 138px;
+  padding-bottom: 27px;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 709px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
+.programs__button {
+  margin-bottom: 22px;
 }
 
 .programs__list {
@@ -25,7 +21,12 @@
 .programs__item {
   box-sizing: border-box;
 
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin: 0;
   }
 }

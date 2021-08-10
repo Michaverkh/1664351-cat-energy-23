@@ -1,3 +1,10 @@
+.socials {
+  width: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .socials__link:not(.socials__link.socials__link--fb) {
   display: block;
   text-decoration: none;
