@@ -2,33 +2,60 @@
   display: grid;
   grid-template-columns: 124px 124px;
   grid-template-rows: min-content min-content;
+  grid-template-areas: "weight time" "money money";
+  column-gap: 31px;
+  row-gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 124px 124px auto;
     grid-template-rows: min-content;
+    grid-template-areas: "weight time money";
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 124px 124px;
     grid-template-rows: min-content min-content;
+    grid-template-areas: "weight time" "money money";
   }
 }
 
-.results-list__item span:first-child {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
+.results-list__item:not(:last-child) span {
+  display: block;
+  text-align: center;
+
+  &:first-child {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &:last-child {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
 }
 
-.results-list__item {
-  &--spending-money span {
+.results-list__item--losing-weight {
+  grid-area: weight;
+}
+
+.results-list__item--spending-time {
+  grid-area: time;
+}
+
+.results-list__item.results-list__item--spending-money {
+  grid-area: money;
+  text-align: center;
+
+  & span {
     font-family: "Oswald", sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
   }
 }

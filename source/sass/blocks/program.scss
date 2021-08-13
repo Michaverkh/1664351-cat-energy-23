@@ -14,6 +14,14 @@
   text-transform: uppercase;
   color: $headers-font;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 214px;
+  }
 }
 
 .program__text {
@@ -23,6 +31,14 @@
   padding-bottom: 23px;
   margin-bottom: 19px;
   border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
 
 .program__link {
