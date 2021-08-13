@@ -2,6 +2,44 @@
   min-height: 266px;
   background-color: $basic-gray;
   padding: 30px 20px 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 55px 51px;
+  }
+
+  &:first-child {
+    background-image: url("../img/decorative/cat_slim.png");
+    background-position: top 21px left 20px;
+    background-repeat: no-repeat;
+    background-size: 50px 53px;
+
+    @media (min-width: $tablet-width) {
+      background-position: top 81px right 62px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: top 41px left 52px;
+      background-size: 100px 106px;
+    }
+  }
+
+  &:last-child {
+    background-image: url("../img/decorative/cat_muscle.png");
+    background-position: top 24px left 13px;
+    background-repeat: no-repeat;
+    background-size: 67px 50px;
+
+    @media (min-width: $tablet-width) {
+      background-position: top 91px right 28px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: top 47px left 33px;
+      background-size: 134px 100px;
+    }
+  }
 }
 
 .program__header {
@@ -16,11 +54,14 @@
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 214px;
+    margin-bottom: 73px;
   }
 }
 
@@ -34,15 +75,21 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
+    border: none;
+    padding: 0;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 23px;
   }
 }
 
 .program__link {
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
   @include indent-reset;
   font-family: "Oswald", sans-serif;
@@ -52,14 +99,21 @@
   color: $headers-font;
   text-transform: uppercase;
   text-decoration: none;
-  width: 123px;
-  background: url("../img/decorative/icon_arrow.svg") center right no-repeat;
+  width: 150px;
+}
 
-  &:hover {
-    background: url("../img/decorative/icon_arrow_l.svg") center right no-repeat;
+.program__arrow {
+  display: block;
+  width: 32px;
+  height: 10px;
+  margin-left: 15px;
+  background: url("../img/decorative/icon_arrow.svg") center left no-repeat;
+
+  .program__link:hover & {
+    background: url("../img/decorative/icon_arrow_l.svg") center left no-repeat;
   }
 
-  &:active {
+  .program__link:active & {
     opacity: 0.3;
   }
 }

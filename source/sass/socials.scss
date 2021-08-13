@@ -1,8 +1,15 @@
 .socials {
-  width: 129px;
+  width: 280px;
+  border-bottom: 1px solid $border-gray;
+}
+
+.socials__wrapper {
+  width: 130px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .socials__link:not(.socials__link.socials__link--fb) {
