@@ -1,17 +1,24 @@
 .page-main__header {
   position: relative;
+  min-height: 302px;
+  padding-top: 27px;
   font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 72px;
-  text-align: center;
   color: $basic-background;
-  min-height: 480px;
-  outline: 2px solid rgb(242, 24, 24);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    min-height: 960px;
+    color: $headers-font;
+    min-height: 850px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    min-height: 696px;
+    top: 0;
+    color: $headers-font;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 0;
   }
 }
 
@@ -20,33 +27,121 @@
   position: absolute;
   width: 280px;
   height: 270px;
-  top: 200px;
-  left: center;
-  margin-right: 140px;
+  top: 167px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   background-image: url("../img/decorative/big_orange_box.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  z-index: 2;
+  outline: 2px solid rgb(105, 7, 218);
+
+  @media (min-width: $tablet-width) {
+    height: 609px;
+    width: 100%;
+    top: 263px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 499px;
+    top: 141px;
+    background-position: 68% 0;
+  }
 }
 
 .page-main__wrapper {
-  min-height: 320px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  min-height: 302px;
+  margin: 0 auto;
   background-color: $basic-green;
-  background-image: url("../img/decorative/licking_cat.jpg");
+  background-image: url("/img/decorative/licking_cat.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  outline: 2px solid rgb(105, 7, 218);
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: $basic-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    grid-column: -1/-2;
+    background-image: url("../img/decorative/licking_cat_desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $basic-green;
+  }
 }
 
 .page-main__green-background {
-  min-height: 320px;
+  height: 100%;
   background-color: $green-opacity;
-  padding: 38px 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $green-opacity;
+  }
 }
 
-.page-main__green-background h1 {
+.page-main__description {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  outline: 2px solid rgb(228, 92, 14);
+  text-align: center;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 535px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 1220px;
+    top: 223px;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 80px;
+  }
+}
+
+.page-main__description h1 {
+  font-size: 36px;
+  line-height: 36px;
+
   @include indent-reset;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
-.page-main__green-background p {
+.page-main__description p {
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 2;
+
   @include indent-reset;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
