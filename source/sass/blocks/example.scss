@@ -1,6 +1,6 @@
 .example {
   background-color: $basic-background;
-  outline: 2px solid $basic-green;
+  // outline: 2px solid $basic-green;
   position: relative;
 }
 
@@ -12,7 +12,7 @@
   left: 0;
   bottom: 0;
   background-color: $basic-gray;
-  z-index: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     height: 40%;
@@ -25,25 +25,32 @@
 
 .example__wrapper {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 64px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 436px 690px;
-    grid-template-rows: 166px min-content;
+    grid-template-rows: 275px min-content;
     column-gap: 134px;
     grid-template-areas: "header slider" "description slider";
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-rows: 205px min-content;
   }
 }
 
 .example__description {
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 59px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 436px;
     grid-area: description;
+    padding-bottom: 0;
   }
 }
 
@@ -56,22 +63,31 @@
   line-height: 40px;
   letter-spacing: 0;
   color: $headers-font;
-  margin-bottom: 33px;
+  padding: 27px 0 33px 0;
   grid-area: header;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding-top: 43px;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 43px 0 63px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 69px 0 0 0;
   }
 }
 
 .example__text {
   @include indent-reset;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
 }
 
 .example__results {
@@ -80,5 +96,7 @@
 }
 
 .example__slider {
+  position: relative;
   grid-area: slider;
+  z-index: 0;
 }

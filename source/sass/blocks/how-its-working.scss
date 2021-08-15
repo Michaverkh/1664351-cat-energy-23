@@ -1,7 +1,17 @@
 .how-its-working {
-  outline: 1px solid $basic-green;
-  padding-top: 27px;
-  padding-bottom: 46px;
+  box-sizing: border-box;
+  // outline: 1px solid $basic-green;
+  padding: 27px 0 42px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 47px 0;
+    border-bottom: 1px solid $center-border;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 0 0;
+    border: none;
+  }
 }
 
 .how-its-working__list {
@@ -33,6 +43,12 @@
 
   @include indent-reset;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .how-its-working__item:not(:last-child) {

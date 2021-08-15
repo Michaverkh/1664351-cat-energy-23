@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     color: $headers-font;
     min-height: 850px;
+    padding-top: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +37,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 2;
-  outline: 2px solid rgb(105, 7, 218);
 
   @media (min-width: $tablet-width) {
     height: 609px;
@@ -64,7 +64,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  outline: 2px solid rgb(105, 7, 218);
   z-index: 0;
 
   @media (min-width: $tablet-width) {
@@ -98,9 +97,9 @@
 
 .page-main__description {
   position: relative;
+  font-style: normal;
   width: 280px;
   margin: 0 auto;
-  outline: 2px solid rgb(228, 92, 14);
   text-align: center;
   z-index: 1;
 
@@ -123,6 +122,7 @@
 .page-main__description h1 {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 800px;
 
   @include indent-reset;
   margin-bottom: 25px;
@@ -137,6 +137,7 @@
   font-size: 14px;
   line-height: 14px;
   z-index: 2;
+  text-transform: uppercase;
 
   @include indent-reset;
 

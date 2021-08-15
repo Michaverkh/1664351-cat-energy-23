@@ -12,16 +12,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 440px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 478px;
+
   }
 }
 
 .main-nav__link {
   display: block;
+  box-sizing: border-box;
   width: 280px;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -60,6 +61,12 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basic-background;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
   }
 }
 

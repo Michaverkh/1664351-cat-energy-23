@@ -1,6 +1,10 @@
 .socials {
   width: 280px;
   border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .socials__wrapper {
@@ -12,7 +16,7 @@
   padding: 20px 0;
 }
 
-.socials__link:not(.socials__link.socials__link--fb) {
+.socials__link {
   display: block;
   text-decoration: none;
 

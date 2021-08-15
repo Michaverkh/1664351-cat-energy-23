@@ -1,18 +1,21 @@
 .page-header {
   position: relative;
-  outline: 2px solid rgb(220, 242, 24);
   z-index: 4;
 }
 
 .page-header__container {
   position: relative;
-  padding: 10px 0 10px 0;
-  outline: 2px solid rgb(100, 100, 24);
+  padding: 10px 0 17px 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 24px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 0 0;
   }
 }
 
