@@ -15,11 +15,11 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    height: 40%;
+    height: 480px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 70%;
+    height: 462px;
   }
 }
 

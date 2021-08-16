@@ -11,6 +11,17 @@
   color: $headers-font;
 
   @include indent-reset;
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 84px;
+  }
 }
 
 .goods__list {
