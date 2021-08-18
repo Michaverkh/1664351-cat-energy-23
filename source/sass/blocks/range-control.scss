@@ -4,10 +4,15 @@
   align-items: center;
   width: 200px;
   margin: 0 auto;
-  padding: 23px 0;
+  padding: 10px 0;
 
   @media (min-width: $tablet-width) {
-    width: 590px;
+    width: 569px;
+    transform: translateY(-185px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(36px, -184px);
   }
 }
 
@@ -24,6 +29,12 @@
   cursor: pointer;
   padding: 2px 0;
   border-bottom: 1px dotted $border-gray;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .range-control__bar {
@@ -57,6 +68,13 @@
 }
 
 .range-control__input {
+  -webkit-appearance: none;
+  position: relative;
+  width: 428px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $range-background;
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -64,15 +82,6 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
-}
-
-.range-control__input {
-  -webkit-appearance: none;
-  position: relative;
-  width: 428px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: $range-background;
 }
 
 .range-control__input::-webkit-slider-thumb {
@@ -84,7 +93,6 @@
   border-radius: 50%;
   background-color: $basic-green;
   border: 12px solid $basic-background;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 0 1px $range-background;
   cursor: pointer;
 }

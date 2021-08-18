@@ -6,6 +6,7 @@
   color: $basic-background;
   width: 100%;
 
+
   @media (min-width: $tablet-width) {
     color: $headers-font;
     min-height: 850px;
@@ -122,7 +123,7 @@
 .page-main__description h1 {
   font-size: 36px;
   line-height: 36px;
-  font-weight: 800px;
+  font-weight: normal;
 
   @include indent-reset;
   margin-bottom: 25px;

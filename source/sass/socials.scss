@@ -29,9 +29,9 @@
   }
 }
 
-.socials__link.socials__link--fb {
+.socials__link.socials__link--fb{
   &:hover {
-    stroke: $basic-green;
+    fill: $basic-green;
   }
 
   &:active svg {

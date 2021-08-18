@@ -1,5 +1,6 @@
 .button {
   display: block;
+  box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -10,7 +11,7 @@
   text-decoration: none;
   color: $basic-background;
   background-color: $basic-green;
-  padding: 14px 26px;
+  padding: 10px 26px;
   border: none;
 
   &:hover {
