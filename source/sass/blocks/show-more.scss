@@ -1,10 +1,19 @@
 .show-more {
-  min-height: 158px;
-  padding-top: 75px;
+  padding: 75px 0 25px 0;
   background: url("../img/decorative/plus.svg") center top 10px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $basic-gray;
+    background: url("../img/decorative/plus.svg") center top 85px no-repeat;
+    padding: 161px 0 38px 0;
+  }
 }
 
 .show-more__text {
+  display: block;
+  margin: 0 auto;
+  width: 204px;
+  margin-bottom: 8px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -13,10 +22,31 @@
   text-align: center;
   color: $headers-font;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 134px;
+    margin-bottom: 23px;
+  }
 }
 
 .show-more__description {
   @include indent-reset;
+  display: block;
+  margin: 0 auto;
+  width: 221px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 87px;
+    width: 167px;
+  }
 }
 
 .show-more .show-more__button {

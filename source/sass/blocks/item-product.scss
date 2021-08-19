@@ -6,7 +6,6 @@
   grid-row-gap: 15px;
   box-sizing: border-box;
   padding: 19px 0 25px 0;
-  outline: 1px solid rgb(4, 117, 51);
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -15,6 +14,8 @@
     align-items: center;
     padding: 0 36px 39px 36px;
     grid-row-gap: 0;
+    background-color: $basic-gray;
+    min-height: 430px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +26,7 @@
 .item-product__header {
   width: 76px;
   grid-area: h;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -41,10 +43,43 @@
   justify-content: center;
   align-items: center;
   grid-area: l;
+  background-color: transparent;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     order: 1;
     margin-bottom: 34px;
+  }
+}
+
+.item-product__logo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.item-product:nth-child(2n) .item-product__logo {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.item-product:nth-child(2n+1) .item-product__logo {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
   }
 }
 
@@ -68,6 +103,7 @@
 
 .item-product__table {
   grid-area: t;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -78,6 +114,7 @@
 .item-product .item-product__button {
   grid-area: b;
   width: auto;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     order: 4;
