@@ -1,6 +1,13 @@
-
-
 .additional-goods__list {
   @include indent-reset;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    border: none;
+  }
 }

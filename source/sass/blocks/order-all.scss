@@ -1,7 +1,11 @@
 .order-all {
   background: url("../img/decorative/gift-photo-mobile.png") center no-repeat;
   background-size: cover;
-  min-height: 289px;
+  min-height: 275px;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .order-all__icon {
