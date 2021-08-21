@@ -4,13 +4,25 @@
 }
 
 .page-footer__contacts {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    top: 95px;
+    left: 9%;
+    width: 570px;
+    margin: 0;
+    padding: 65px 89px 65px 76px;
+    background-color: $basic-background;
+  }
+}
+
+.page-footer__contacts-wrapper {
   display: flex;
   justify-content: space-between;
   width: 280px;
   box-sizing: border-box;
   padding: 28px 0 26px 0;
   margin: 0 auto;
-  background-color: $basic-background;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -18,12 +30,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 9%;
-    width: 570px;
     margin: 0;
-    padding: 65px 89px 65px 76px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.page-footer__contacts--gray-background {
+  background-color: $basic-gray;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-background;
   }
 }
 
@@ -123,6 +140,7 @@
   @media (min-width: $tablet-width) {
     width: 130px;
     border: none;
+    padding: 0;
   }
 }
 

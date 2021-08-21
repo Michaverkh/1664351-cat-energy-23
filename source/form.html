@@ -30,50 +30,53 @@
     </header>
 
     <main class="page-main-form">
-      <section class="program-selection centering-container">
-        <div class="program-selection__header">
-          <h1>Подбор программы</h1>
-          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        </div>
-        <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
-          <div class="program-form__wrapper program-form__wrapper--cat-and-program">
-            <fieldset class="program-form__fieldset program-fieldset">
-              <legend class="visually-hidden">Параметры кота</legend>
-              <ul class="program-fieldset__parameters-list">
-                <li class="program-fieldset__parameters-item program-text-field">
-                  <label class="program-text-field__label" for="name-id">Имя:*</label>
-                  <input class="program-text-field__input" type="text" name="name" id="name-id" placeholder="Барсик">
-                </li>
-                <li class="program-fieldset__parameters-item program-text-field">
-                  <label class="program-text-field__label" for="weight-id">Вес (КГ):*</label>
-                  <input class="program-text-field__input" type="text" name="weight" id="weight-id" placeholder="7">
-                </li>
-                <li class="program-fieldset__parameters-item program-text-field">
-                  <label class="program-text-field__label" for="age-id">Возраст (ЛЕТ):</label>
-                  <input class="program-text-field__input" type="text" name="age" id="age-id" placeholder="7">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="program-form__fieldset program-fieldset">
-              <legend class="visually-hidden">Тип программы</legend>
-              <ul class="program-fieldset__parameters-list">
-                <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="losing-weight-id" value="lose-weight">
-                  <label class="program-radio__label" for="losing-weight-id">Похудение</label>
-                </li>
-                <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="gaining-muscle-id" value="gain-muscle">
-                  <label class="program-radio__label" for="gaining-muscle-id">Набор массы</label>
-                </li>
-                <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="advice-id" value="need-advice">
-                  <label class="program-radio__label" for="advice-id">Не знаю (нужен ваш совет)</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+      <div class="program-selection__header centering-container">
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+      </div>
+      <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
+        <div class="program-form__wrapper program-form__wrapper--cat-and-program">
           <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Контактные данные (владельца кота)</legend>
+            <legend class="visually-hidden">Параметры кота</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-text-field">
+                <label class="program-text-field__label" for="name-id">Имя:*</label>
+                <input class="program-text-field__input" type="text" name="name" id="name-id" placeholder="Барсик">
+              </li>
+              <li class="program-fieldset__parameters-item program-text-field">
+                <label class="program-text-field__label" for="weight-id">Вес (КГ):*</label>
+                <input class="program-text-field__input" type="text" name="weight" id="weight-id" placeholder="7">
+              </li>
+              <li class="program-fieldset__parameters-item program-text-field">
+                <label class="program-text-field__label" for="age-id">Возраст (ЛЕТ):</label>
+                <input class="program-text-field__input" type="text" name="age" id="age-id" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program-fieldset__parameters-list">
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="losing-weight-id" value="lose-weight">
+                <label class="program-radio__label" for="losing-weight-id">Похудение</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="gaining-muscle-id" value="gain-muscle">
+                <label class="program-radio__label" for="gaining-muscle-id">Набор массы</label>
+              </li>
+              <li class="program-fieldset__parameters-item program-radio">
+                <input class="program-radio__input" type="radio" name="program-type" id="advice-id" value="need-advice">
+                <label class="program-radio__label" for="advice-id">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <legend class="green-line__header">Контактные данные (владельца кота)</legend>
+            <div class="green-line__line"></div>
+          </div>
+          <div class="centering-container">
             <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--contacts">
               <li class="program-fieldset__parameters-item program-text-field program-text-field--email">
                 <label class="program-text-field__label" for="email-id">e-mail:*</label>
@@ -84,15 +87,25 @@
                 <input class="program-text-field__input" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Комментарий</legend>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <legend class="green-line__header">Комментарий</legend>
+            <div class="green-line__line"></div>
+          </div>
+          <div class="centering-container">
             <label class="program-fieldset__label comment">
               <textarea class="comment__textarea" name="comment"cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
-          </fieldset>
-          <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Дополнительно</legend>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <legend class="green-line__header">Дополнительно</legend>
+            <div class="green-line__line"></div>
+          </div>
+          <div class="centering-container">
             <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--additional">
               <li class="program-fieldset__parameters-item program-checkbox">
                 <input class="program-checkbox__input" type="checkbox" name="additional-type" id="sweetener-id" value="sweetener">
@@ -111,19 +124,24 @@
                 <label class="program-checkbox__label" for="vitamins-id">витамины</label>
               </li>
             </ul>
-          </fieldset>
-          <div class="program-form__button-wrapper">
-            <button class="program-form__button button" type="submit">отправить заявку</button>
-            <p class="program-form__footnote">* — Обязательные поля</p>
           </div>
-        </form>
-      </section>
+        </fieldset>
+        <div class="program-form__button-wrapper centering-container">
+          <button class="program-form__button button" type="submit">отправить заявку</button>
+          <p class="program-form__footnote">* — Обязательные поля</p>
+        </div>
+      </form>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts">
-        <p>приглашаем к сотрудничеству дилеров!</p>
-        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.</address>
+      <div class="page-footer__contacts page-footer__contacts--gray-background">
+        <div class="page-footer__contacts-wrapper">
+          <p>приглашаем к сотрудничеству дилеров!</p>
+          <address>
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург.</span>
+          </address>
+        </div>
       </div>
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <div class="page-footer__wrapper">

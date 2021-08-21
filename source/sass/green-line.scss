@@ -1,0 +1,62 @@
+.green-line {
+  position: relative;
+}
+
+.green-line__header {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: $headers-font;
+  width: 248px;
+  margin: 0 auto;
+  left: -16px;
+  padding: 25px 0 36px 0;
+  background-color: $basic-background;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 68px 0 80px 37px;
+    width: 411px;
+    left: -149px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -445px;
+  }
+}
+
+.green-line__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "empty greeny";
+
+  &::before {
+    content: "";
+    grid-area: empty;
+    height: 2px;
+    background-color: $basic-background;
+
+    @media (min-width: $tablet-width) {
+      background-color: $basic-green;
+    }
+  }
+
+  &::after {
+    content: "";
+    grid-area: greeny;
+    height: 2px;
+    background-color: $basic-green;
+  }
+}
