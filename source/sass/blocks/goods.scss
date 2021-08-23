@@ -1,30 +1,37 @@
-.goods {
-  outline: 1px solid $basic-gray;
-}
-
 .goods__header {
+  @include indent-reset;
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
   color: $headers-font;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
-  @include indent-reset;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 163px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 165px;
+  }
 }
 
 .goods__list {
+  @include indent-reset;
   list-style: none;
   width: 100%;
-
-  @include indent-reset;
-  outline: 1px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto-fill, min-content);
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 141px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,13 +39,21 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(auto-fill, min-content);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 144px;
   }
 }
 
 .goods__wrapper {
+  height: auto;
+  padding-bottom: 35px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 86px;
   }
 }

@@ -1,0 +1,53 @@
+.program-text-field {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.program-text-field__input {
+  width: 100%;
+  padding: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+  }
+}
+
+.program-text-field__label {
+  margin-right: 13px;
+  white-space: nowrap;
+  height: 18px;
+}
+
+.program-text-field.program-text-field--email {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+
+  & .program-text-field__input {
+    box-sizing: border-box;
+    background: url("../img/decorative/icon_email.svg") right 15px center no-repeat;
+
+    @media (min-width: $desktop-width) {
+      width: 486px;
+    }
+  }
+}
+
+.program-text-field--phone {
+  & .program-text-field__input {
+    box-sizing: border-box;
+    background: url("../img/decorative/icon_phone.svg") right 15px center no-repeat;
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
+    }
+  }
+}

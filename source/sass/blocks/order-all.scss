@@ -1,7 +1,21 @@
 .order-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background: url("../img/decorative/gift-photo-mobile.png") center no-repeat;
   background-size: cover;
-  min-height: 289px;
+  padding: 58px 61px 43px 58px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 71px 124px 78px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding: 56px 43px 42px 41px;
+  }
 }
 
 .order-all__icon {
@@ -18,4 +32,14 @@
   line-height: 20px;
   text-align: center;
   color: $basic-background;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    text-align: center;
+  }
 }

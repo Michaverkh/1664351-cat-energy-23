@@ -43,11 +43,10 @@
 }
 
 .program__header {
+  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
-
-  @include indent-reset;
   margin-left: 71px;
   text-transform: uppercase;
   color: $headers-font;
@@ -66,14 +65,18 @@
 }
 
 .program__text {
-  display: block;
-
   @include indent-reset;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
   padding-bottom: 23px;
   margin-bottom: 19px;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     width: 340px;
     border: none;
     padding: 0;
@@ -87,11 +90,10 @@
 }
 
 .program__link {
+  @include indent-reset;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -112,8 +114,8 @@
   .program__link:hover & {
     background: url("../img/decorative/icon_arrow_l.svg") center left no-repeat;
   }
+}
 
-  .program__link:active & {
-    opacity: 0.3;
-  }
+.program__link:active {
+  opacity: 0.3;
 }

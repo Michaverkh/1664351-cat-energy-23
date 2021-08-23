@@ -8,12 +8,16 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__container centering-container">
-        <a class="page-header__logo" href="#">
-          <img src="../img/decorative/logo_text.svg" width="101" height="18" alt="логтип компании">
-        </a>
+      <div class="page-header__container">
+        <div class="page-header__flex-wrapper">
+          <a class="page-header__logo" href="#">
+            <img src="../img/decorative/logo_text.svg" width="101" height="18" alt="логтип компании">
+          </a>
+        </div>
         <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__button-wrapper">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link" href="../index.html">Главная</a>
@@ -30,16 +34,16 @@
     </header>
 
     <main class="page-main-form">
-      <section class="program-selection centering-container">
-        <div class="program-selection__header">
-          <h1>Подбор программы</h1>
-          <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        </div>
-        <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
-          <div class="program-form__wrapper program-form__wrapper--cat-and-program">
-            <fieldset class="program-form__fieldset program-fieldset">
-              <legend class="visually-hidden">Параметры кота</legend>
-              <ul class="program-fieldset__parameters-list">
+      <div class="program-selection__header centering-container">
+        <h1>Подбор программы</h1>
+        <p>Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+      </div>
+      <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
+        <div class="program-form__wrapper program-form__wrapper--cat-and-program">
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="visually-hidden">Параметры кота</legend>
+            <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--cat-data">
+              <div class="centering-container centering-container--special">
                 <li class="program-fieldset__parameters-item program-text-field">
                   <label class="program-text-field__label" for="name-id">Имя:*</label>
                   <input class="program-text-field__input" type="text" name="name" id="name-id" placeholder="Барсик">
@@ -52,28 +56,37 @@
                   <label class="program-text-field__label" for="age-id">Возраст (ЛЕТ):</label>
                   <input class="program-text-field__input" type="text" name="age" id="age-id" placeholder="7">
                 </li>
-              </ul>
-            </fieldset>
-            <fieldset class="program-form__fieldset program-fieldset">
-              <legend class="visually-hidden">Тип программы</legend>
-              <ul class="program-fieldset__parameters-list">
+              </div>
+            </ul>
+          </fieldset>
+          <fieldset class="program-form__fieldset program-fieldset">
+            <legend class="visually-hidden">Тип программы</legend>
+            <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--program-type">
+              <div class="centering-container centering-container--special">
                 <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="losing-weight-id" value="lose-weight">
+                  <input class="program-radio__input visually-hidden" type="radio" name="program-type" id="losing-weight-id" value="lose-weight">
                   <label class="program-radio__label" for="losing-weight-id">Похудение</label>
                 </li>
                 <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="gaining-muscle-id" value="gain-muscle">
+                  <input class="program-radio__input visually-hidden" type="radio" name="program-type" id="gaining-muscle-id" value="gain-muscle">
                   <label class="program-radio__label" for="gaining-muscle-id">Набор массы</label>
                 </li>
                 <li class="program-fieldset__parameters-item program-radio">
-                  <input class="program-radio__input" type="radio" name="program-type" id="advice-id" value="need-advice">
+                  <input class="program-radio__input visually-hidden" type="radio" name="program-type" id="advice-id" value="need-advice">
                   <label class="program-radio__label" for="advice-id">Не знаю (нужен ваш совет)</label>
                 </li>
-              </ul>
-            </fieldset>
+              </div>
+            </ul>
+          </fieldset>
+        </div>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <div class="green-line__wrapper centering-container">
+              <h2 class="green-line__header">Контактные данные <br> (владельца кота)</h2>
+            </div>
+            <div class="green-line__line"></div>
           </div>
-          <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Контактные данные (владельца кота)</legend>
+          <div class="centering-container">
             <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--contacts">
               <li class="program-fieldset__parameters-item program-text-field program-text-field--email">
                 <label class="program-text-field__label" for="email-id">e-mail:*</label>
@@ -84,48 +97,67 @@
                 <input class="program-text-field__input" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Комментарий</legend>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <div class="green-line__wrapper centering-container">
+              <h2 class="green-line__header">Коментарий</h2>
+            </div>
+            <div class="green-line__line"></div>
+          </div>
+          <div class="centering-container">
             <label class="program-fieldset__label comment">
-              <textarea class="comment__textarea" name="comment"cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
-          </fieldset>
-          <fieldset class="program-form__fieldset program-fieldset">
-            <legend class="program-fieldset__legend">Дополнительно</legend>
+          </div>
+        </fieldset>
+        <fieldset class="program-form__fieldset program-fieldset">
+          <div class="green-line">
+            <div class="green-line__wrapper centering-container">
+              <h2 class="green-line__header">Дополнительно</h2>
+            </div>
+            <div class="green-line__line"></div>
+          </div>
+          <div class="centering-container">
             <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--additional">
               <li class="program-fieldset__parameters-item program-checkbox">
-                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="sweetener-id" value="sweetener">
+                <input class="program-checkbox__input visually-hidden" type="checkbox" name="additional-type" id="sweetener-id" value="sweetener">
                 <label class="program-checkbox__label" for="sweetener-id">сахарозаменитель</label>
               </li>
               <li class="program-fieldset__parameters-item program-checkbox">
-                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="water-id" value="water">
+                <input class="program-checkbox__input visually-hidden" type="checkbox" name="additional-type" id="water-id" value="water">
                 <label class="program-checkbox__label" for="water-id">питьевая вода</label>
               </li>
               <li class="program-fieldset__parameters-item program-checkbox">
-                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="milk-id" value="milk">
+                <input class="program-checkbox__input visually-hidden" type="checkbox" name="additional-type" id="milk-id" value="milk">
                 <label class="program-checkbox__label" for="milk-id">молоко</label>
               </li>
               <li class="program-fieldset__parameters-item program-checkbox">
-                <input class="program-checkbox__input" type="checkbox" name="additional-type" id="vitamins-id" value="vitamins">
+                <input class="program-checkbox__input visually-hidden" type="checkbox" name="additional-type" id="vitamins-id" value="vitamins">
                 <label class="program-checkbox__label" for="vitamins-id">витамины</label>
               </li>
             </ul>
-          </fieldset>
-          <div class="program-form__button-wrapper">
-            <button class="program-form__button button" type="submit">отправить заявку</button>
-            <p class="program-form__footnote">* — Обязательные поля</p>
           </div>
-        </form>
-      </section>
+        </fieldset>
+        <div class="program-form__button-wrapper centering-container">
+          <button class="program-form__button button" type="submit">отправить заявку</button>
+          <p class="program-form__footnote">* — Обязательные поля</p>
+        </div>
+      </form>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__contacts">
-        <p>приглашаем к сотрудничеству дилеров!</p>
-        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.</address>
+        <div class="page-footer__contacts-wrapper">
+          <p>приглашаем <br> к сотрудничеству дилеров!</p>
+          <address>
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург.</span>
+          </address>
+        </div>
       </div>
-      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <iframe class="page-footer__map" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
       <div class="page-footer__wrapper">
         <div class="page-footer__flex-wrapper centering-container">
           <a class="page-footer__logo" href="../index.html">
@@ -163,8 +195,8 @@
                 <span class="visually-hidden">instagramm</span>
               </a>
               <a href="#" class="socials__link socials__link--fb">
-                <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M21 2.75H17.5C15.9529 2.75 14.4692 3.46024 13.3752 4.72447C12.2813 5.98871 11.6667 7.70337 11.6667 9.49127V13.536H8.16669V18.929H11.6667V29.7151H16.3334V18.929H19.8334L21 13.536H16.3334V9.49127C16.3334 9.13369 16.4563 8.79076 16.6751 8.53791C16.8939 8.28506 17.1906 8.14302 17.5 8.14302H21V2.75Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="16" height="22" viewBox="0 0 22 33" fill="none" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 2.75H17.5C15.9529 2.75 14.4692 3.46024 13.3752 4.72447C12.2813 5.98871 11.6667 7.70337 11.6667 9.49127V13.536H8.16669V18.929H11.6667V29.7151H16.3334V18.929H19.8334L21 13.536H16.3334V9.49127C16.3334 9.13369 16.4563 8.79076 16.6751 8.53791C16.8939 8.28506 17.1906 8.14302 17.5 8.14302H21V2.75Z"/>
                 </svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
@@ -172,6 +204,9 @@
           </div>
           <div class="page-footer__copyright copyright">
             <a class="copyright__link" href="#">HTML Academy</a>
+            <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"/>
+            </svg>
           </div>
         </div>
       </div>

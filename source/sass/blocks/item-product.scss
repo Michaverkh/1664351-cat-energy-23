@@ -1,4 +1,84 @@
+.item-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 45px min-content 40px;
+  grid-template-areas: "l h" "l t" "b b";
+  grid-row-gap: 15px;
+  box-sizing: border-box;
+  padding: 19px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 36px 39px 36px;
+    grid-row-gap: 0;
+    background-color: $basic-gray;
+    min-height: 430px;
+  }
+}
+
+.item-product__header {
+  @include indent-reset;
+  width: 76px;
+  grid-area: h;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 21px;
+    width: 150px;
+    text-align: center;
+  }
+}
+
+.item-product__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: l;
+  background-color: transparent;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    order: 1;
+    margin-bottom: 34px;
+  }
+}
+
+.item-product__logo {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.item-product:nth-child(2n) .item-product__logo {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.item-product:nth-child(2n+1) .item-product__logo {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
 .item-product__header a {
+  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -6,8 +86,31 @@
   line-height: 20px;
   text-decoration: none;
   color: $headers-font;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.item-product__table {
+  grid-area: t;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-bottom: 33px;
+  }
 }
 
 .item-product .item-product__button {
+  grid-area: b;
   width: auto;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 100%;
+  }
 }

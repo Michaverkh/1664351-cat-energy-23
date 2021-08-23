@@ -28,9 +28,8 @@
 }
 
 .programs__list {
-  list-style: none;
-
   @include indent-reset;
+  list-style: none;
 
   @media (min-width: $desktop-width) {
     display: flex;

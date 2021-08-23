@@ -1,20 +1,43 @@
-.program-form__wrapper--cat-and-program {
-  width: 280px;
-  margin: 0 auto;
-  outline: 2px solid $basic-green;
+.program-form__button-wrapper {
+  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    width: 709px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 82px;
+  }
+}
+
+.program-form__button {
+  width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    margin-bottom: 0;
+    margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 81px;
   }
 }
 
 .program-form__footnote {
   @include indent-reset;
+  display: block;
   color: $headers-font;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+  }
 }

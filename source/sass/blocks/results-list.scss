@@ -7,15 +7,27 @@
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 124px 124px auto;
+    grid-template-columns: 162px 162px auto;
     grid-template-rows: min-content;
     grid-template-areas: "weight time money";
+    column-gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 124px 124px;
+    grid-template-columns: 162px 162px;
     grid-template-rows: min-content min-content;
     grid-template-areas: "weight time" "money money";
+    row-gap: 55px;
+  }
+}
+
+.results-list__item:not(:last-child) {
+  padding-top: 15px;
+  background: url("../img/decorative/weight_back.svg") top center no-repeat;
+  background-size: 124px 64px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 162px 72px;
   }
 }
 
@@ -29,6 +41,12 @@
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   &:last-child {
@@ -36,6 +54,14 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -43,19 +69,59 @@
   grid-area: weight;
 }
 
+.results-list__item--losing-weight span:last-child {
+  width: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 100px;
+  }
+}
+
 .results-list__item--spending-time {
   grid-area: time;
+}
+
+.results-list__item--spending-time span:last-child {
+  width: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+  }
 }
 
 .results-list__item.results-list__item--spending-money {
   grid-area: money;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-left: auto;
+    padding-top: 15px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-top: 15px;
+    text-align: left;
+  }
+
   & span {
     font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+  }
+
+  & span:last-child {
+    @media (min-width: $desktop-width) {
+      margin-left: 63px;
+    }
   }
 }

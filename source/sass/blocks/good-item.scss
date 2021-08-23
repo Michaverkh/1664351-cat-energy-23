@@ -1,10 +1,27 @@
 .good-item {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  box-sizing: border-box;
+  padding: 13px 0 19px 0;
   border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 26px 38px 28px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    justify-content: flex-start;
+  }
+
+  &:first-child {
+    border-top: 1px solid $border-gray;
+  }
 }
 
 .good-item__header {
+  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -12,6 +29,50 @@
   line-height: 16px;
   color: $headers-font;
   text-transform: uppercase;
+  margin-bottom: 13px;
 
-  @include indent-reset;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+.good-item__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-left: auto;
+    width: 288px;
+  }
+}
+
+.good-item__quantity {
+  margin-right: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.good-item__order-button {
+  flex-basis: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 244px;
+    margin-left: 38px;
+  }
 }

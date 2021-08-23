@@ -10,3 +10,9 @@
     width: 1220px;
   }
 }
+
+.centering-container.centering-container--special {
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
+}

@@ -1,0 +1,39 @@
+.program-radio {
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 28px;
+  }
+}
+
+.program-radio__label {
+  padding: 3px 0 9px 45px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-color: $basic-background;
+    border-radius: 50%;
+    border: 1px solid $border-gray;
+  }
+}
+
+.program-radio__input:checked + .program-radio__label::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  border: 8px solid $basic-background;
+  box-shadow: 0 0 0 1px $border-gray;
+}

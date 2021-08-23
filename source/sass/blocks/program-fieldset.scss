@@ -1,4 +1,5 @@
 .program-fieldset {
+  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -6,7 +7,16 @@
   line-height: 18px;
   border: none;
 
-  @include indent-reset;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  & label,
+  & input,
+  & textarea {
+    text-transform: uppercase;
+  }
 }
 
 .program-fieldset__legend {
@@ -20,7 +30,16 @@
 }
 
 .program-fieldset input {
-  border: 1px solid $border-gray;
+  border: 1px solid $center-border;
+
+  &:hover {
+    border: 1px solid $border-gray;
+  }
+
+  &:focus {
+    border: 1px solid $basic-font;
+    border-radius: none;
+  }
 }
 
 .program-fieldset input::placeholder {
@@ -32,21 +51,57 @@
   list-style: none;
 }
 
+.program-fieldset__parameters-list--cat-data {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+    padding-bottom: 0;
+  }
+}
+
+.program-fieldset__parameters-list--program-type {
+  padding: 28px 0 25px 0;
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 0 32px 0;
+    border: 1px solid $border-gray;
+  }
+}
+
+.program-fieldset__parameters-list--additional {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 42px;
+    column-gap: 124px;
+    grid-template-rows: repeat(auto-fill, min-content);
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+    margin-bottom: 66px;
+  }
+}
+
 .program-fieldset__parameters-list--contacts,
-.program-fieldset__parameters-list--additional,
-.program-form__button-wrapper,
 .program-fieldset__label.comment,
 .program-fieldset__legend {
   display: block;
-  outline: 2px solid $basic-green;
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
-}
-
-.comment__textarea {
-  width: 100%;
-  box-sizing: border-box;
 }

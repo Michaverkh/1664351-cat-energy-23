@@ -3,7 +3,8 @@
   padding: 0 0 0 80px;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 0 57px 0;
+    width: 230px;
+    padding: 111px 0 57px 0;
     background: url("../img/decorative/icon_leaf.svg") right center no-repeat;
   }
 }
@@ -67,4 +68,9 @@
 
 .item-composition p {
   @include indent-reset;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

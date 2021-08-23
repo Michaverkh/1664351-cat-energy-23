@@ -1,6 +1,12 @@
 .socials {
   width: 280px;
+  padding: 20px 0;
   border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .socials__wrapper {
@@ -9,10 +15,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
 }
 
-.socials__link:not(.socials__link.socials__link--fb) {
+.socials__link {
   display: block;
   text-decoration: none;
 
@@ -25,8 +30,14 @@
   }
 }
 
+.socials__link--fb {
+  fill: none;
+  stroke: $basic-font;
+}
+
 .socials__link.socials__link--fb {
   &:hover {
+    fill: none;
     stroke: $basic-green;
   }
 

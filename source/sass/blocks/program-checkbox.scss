@@ -1,0 +1,37 @@
+.program-checkbox {
+  @include indent-reset;
+  position: relative;
+  padding: 5px 0 0 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 0 0 59px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.program-checkbox__label::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  top: 0;
+  left: 0;
+  border: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 39px;
+    height: 39px;
+  }
+}
+
+.program-checkbox__input:checked + .program-checkbox__label::before {
+  background: url("../img/decorative/icon_check.svg") center no-repeat;
+  background-size: 24px 19px;
+}

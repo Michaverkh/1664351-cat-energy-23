@@ -2,8 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 228px;
+  width: 200px;
   margin: 0 auto;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 569px;
+    transform: translateY(-185px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(36px, -184px);
+  }
 }
 
 .range-control__button {
@@ -17,6 +27,22 @@
   color: $headers-font;
   border: none;
   cursor: pointer;
+  padding: 2px 0;
+  border-bottom: 1px dotted $border-gray;
+  background-color: transparent;
+
+  &:hover {
+    border-bottom: 1px solid $border-gray;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .range-control__bar {
@@ -28,6 +54,10 @@
   height: 14px;
   border: 1px solid $border-gray;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .range-control__tougle {
@@ -46,11 +76,39 @@
 }
 
 .range-control__input {
+  -webkit-appearance: none;
+  position: relative;
+  width: 428px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: $range-background;
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.range-control__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  border: 12px solid $basic-background;
+  box-shadow: 0 0 0 1px $range-background, 0px 2px 3px 0px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $range-background, 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px $basic-green, 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
   }
 }
