@@ -1,12 +1,13 @@
 .goods__header {
+  @include indent-reset;
+  display: block;
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
   color: $headers-font;
-
-  @include indent-reset;
+  padding-top: 27px;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {

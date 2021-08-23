@@ -1,12 +1,23 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  background: url("../img/decorative/logo_academy.svg") center right no-repeat;
   padding: 28px 0 32px 0;
 
   @media (min-width: $tablet-width) {
     width: 163px;
-    padding: 9px;
+    padding: 9px 0;
   }
+}
+
+.copyright:hover .copyright__logo {
+  fill: $basic-green;
+}
+
+.copyright:active .copyright__logo,
+.copyright:active .copyright__link {
+  opacity: 0.5;
 }
 
 .copyright__link {

@@ -44,14 +44,15 @@
   }
 }
 
-.page-footer__contacts p,
-.page-footer__contacts address {
+.page-footer__contacts-wrapper p,
+.page-footer__contacts-wrapper address {
   @media (min-width: $tablet-width) {
     width: 160px;
   }
 }
 
-.page-footer__contacts p {
+.page-footer__contacts-wrapper p {
+  @include indent-reset;
   display: block;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -60,16 +61,16 @@
   line-height: 20px;
   text-align: left;
   text-transform: uppercase;
-
-  @include indent-reset;
+  margin-right: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 }
 
-.page-footer__contacts address {
+.page-footer__contacts-wrapper address {
+  @include indent-reset;
   display: block;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -77,8 +78,6 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-
-  @include indent-reset;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

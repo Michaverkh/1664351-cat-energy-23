@@ -3,10 +3,10 @@
 }
 
 .main-nav__list {
+  @include indent-reset;
   display: block;
   list-style: none;
-
-  @include indent-reset;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -19,7 +19,6 @@
 .main-nav__link {
   display: block;
   box-sizing: border-box;
-  width: 280px;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -28,6 +27,7 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  width: 100%;
   padding-top: 22px;
   padding-bottom: 24px;
   background-color: $basic-background;
@@ -42,6 +42,14 @@
     width: auto;
     padding-top: 0;
     padding-bottom: 9px;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -70,9 +78,15 @@
   }
 }
 
+.main-nav__button-wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: -40px;
+  top: -45px;
   right: 0;
   display: block;
   width: 24px;

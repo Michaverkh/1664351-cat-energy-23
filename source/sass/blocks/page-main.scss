@@ -62,7 +62,7 @@
   margin: 0 auto;
   background-color: $basic-green;
   background-image: url("/img/decorative/licking_cat.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
@@ -76,7 +76,7 @@
     position: static;
     grid-column: -1/-2;
     background-image: url("../img/decorative/licking_cat_desktop.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: $basic-green;
@@ -85,14 +85,14 @@
 
 .page-main__green-background {
   height: 100%;
-  background-color: $green-opacity;
+  background-color: rgba(104, 183, 56, 0.85);
 
   @media (min-width: $tablet-width) {
     background-color: $basic-background;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $green-opacity;
+    background-color: rgba(104, 183, 56, 0.85);
   }
 }
 
@@ -121,11 +121,10 @@
 }
 
 .page-main__description h1 {
+  @include indent-reset;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
-
-  @include indent-reset;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -135,12 +134,11 @@
 }
 
 .page-main__description p {
+  @include indent-reset;
   font-size: 14px;
   line-height: 14px;
   z-index: 2;
   text-transform: uppercase;
-
-  @include indent-reset;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

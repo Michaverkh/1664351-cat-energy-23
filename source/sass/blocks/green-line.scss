@@ -2,34 +2,37 @@
   position: relative;
 }
 
+.green-line__wrapper {
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
 .green-line__header {
-  display: block;
+  @include indent-reset;
+  display: inline-block;
   position: relative;
-  box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 26px;
   letter-spacing: 0;
   color: $headers-font;
-  width: 248px;
-  margin: 0 auto;
-  left: -16px;
-  padding: 25px 0 36px 0;
+  padding: 25px 20px 22px 0;
+  white-space: nowrap;
+  // left: -16px;
+
   background-color: $basic-background;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 68px 0 80px 37px;
-    width: 411px;
-    left: -149px;
+    padding: 71px 42px 76px 39px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -445px;
+    left: -40px;
   }
 }
 
@@ -41,6 +44,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "empty greeny";
+  z-index: 1;
 
   &::before {
     content: "";

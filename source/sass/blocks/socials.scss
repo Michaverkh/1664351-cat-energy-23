@@ -1,9 +1,11 @@
 .socials {
   width: 280px;
+  padding: 20px 0;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0;
   }
 }
 
@@ -28,9 +30,15 @@
   }
 }
 
-.socials__link.socials__link--fb{
+.socials__link--fb {
+  fill: none;
+  stroke: $basic-font;
+}
+
+.socials__link.socials__link--fb {
   &:hover {
-    fill: $basic-green;
+    fill: none;
+    stroke: $basic-green;
   }
 
   &:active svg {

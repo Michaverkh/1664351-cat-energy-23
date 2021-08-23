@@ -17,13 +17,10 @@
     background-color: $basic-gray;
     min-height: 430px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .item-product__header {
+  @include indent-reset;
   width: 76px;
   grid-area: h;
   z-index: 1;
@@ -34,8 +31,6 @@
     width: 150px;
     text-align: center;
   }
-
-  @include indent-reset;
 }
 
 .item-product__link {
@@ -56,7 +51,6 @@
 .item-product__logo {
   @media (min-width: $tablet-width) {
     position: absolute;
-    left: 0;
     right: 0;
     bottom: 0;
     left: 50%;
@@ -84,6 +78,7 @@
 }
 
 .item-product__header a {
+  @include indent-reset;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -92,8 +87,6 @@
   text-decoration: none;
   color: $headers-font;
   text-transform: uppercase;
-
-  @include indent-reset;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

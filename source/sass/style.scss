@@ -3,17 +3,6 @@
 @import "colors.scss";
 @import "normalize";
 @import "variables.scss";
-@import "button.scss";
-@import "copyright.scss";
-@import "main-nav.scss";
-@import "page-body.scss";
-@import "page-footer.scss";
-@import "page-header.scss";
-@import "socials.scss";
-@import "company-name.scss";
-@import "visually-hidden.scss";
-@import "centering-container.scss";
-@import "green-line.scss";
 
 // Blocks
 
@@ -37,3 +26,17 @@
 @import "blocks/program-fieldset.scss";
 @import "blocks/page-main.scss";
 @import "blocks/comment.scss";
+@import "blocks/program-text-field.scss";
+@import "blocks/program-radio.scss";
+@import "blocks/program-checkbox.scss";
+@import "blocks/button.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/socials.scss";
+@import "blocks/company-name.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/centering-container.scss";
+@import "blocks/green-line.scss";

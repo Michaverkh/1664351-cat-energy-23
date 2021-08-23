@@ -1,6 +1,14 @@
 .comment__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
   resize: none;
+  padding: 10px 0 10px 15px;
   border: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
 
   &::placeholder {
     color: $basic-font;
