@@ -60,6 +60,14 @@
   }
 }
 
+.main-nav__item:last-child {
+  border-bottom: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
 .main-nav__item--active .main-nav__link {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;

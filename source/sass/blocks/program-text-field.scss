@@ -1,4 +1,5 @@
 .program-text-field {
+  position: relative;
   display: flex;
   align-items: center;
 
@@ -14,6 +15,11 @@
 .program-text-field__input {
   width: 100%;
   padding: 14px;
+  box-sizing: border-box;
+
+  &:invalid {
+    border: 2px solid $error;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
@@ -33,7 +39,6 @@
 
   & .program-text-field__input {
     box-sizing: border-box;
-    background: url("../img/decorative/icon_email.svg") right 15px center no-repeat;
 
     @media (min-width: $desktop-width) {
       width: 486px;
@@ -44,10 +49,19 @@
 .program-text-field--phone {
   & .program-text-field__input {
     box-sizing: border-box;
-    background: url("../img/decorative/icon_phone.svg") right 15px center no-repeat;
 
     @media (min-width: $desktop-width) {
       width: 472px;
     }
   }
+}
+
+.program-text-field__input:focus + .program-text-field__icon > * {
+  stroke: $basic-green;
+}
+
+.program-text-field__icon {
+  position: absolute;
+  right: 14px;
+  top: 14px;
 }

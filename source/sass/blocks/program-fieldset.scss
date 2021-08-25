@@ -30,14 +30,18 @@
 }
 
 .program-fieldset input {
-  border: 1px solid $center-border;
+  border: 2px solid $center-border;
+  box-sizing: border-box;
 
   &:hover {
-    border: 1px solid $border-gray;
+    border: 2px solid $border-gray;
   }
 
-  &:focus {
-    border: 1px solid $basic-font;
+  &:focus,
+  &:active {
+    border: none;
+    outline: none;
+    border: 2px solid $basic-font;
     border-radius: none;
   }
 }
@@ -71,8 +75,14 @@
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
+    width: 709px;
+    margin: 0 auto;
     padding: 32px 0 32px 0;
     border: 1px solid $border-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
