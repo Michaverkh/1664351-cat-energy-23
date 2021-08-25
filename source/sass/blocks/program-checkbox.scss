@@ -23,7 +23,7 @@
   height: 29px;
   top: 0;
   left: 0;
-  border: 1px solid $border-gray;
+  border: 1px solid $radio-border;
 
   @media (min-width: $tablet-width) {
     width: 39px;
@@ -31,7 +31,15 @@
   }
 }
 
+.program-checkbox__label:hover:before {
+  border: 1px solid $radio-hover-border;
+}
+
 .program-checkbox__input:checked + .program-checkbox__label::before {
   background: url("../img/decorative/icon_check.svg") center no-repeat;
   background-size: 24px 19px;
+}
+
+.program-checkbox__input:disabled + .program-checkbox__label {
+  opacity: 0.3;
 }

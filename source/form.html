@@ -19,13 +19,13 @@
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="../index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="../catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a class="main-nav__link main-nav__link--active" href="../form.html">Подбор программы</a>
             </li>
           </ul>
@@ -39,7 +39,7 @@
         <p>Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       </div>
       <form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
-        <div class="program-form__wrapper program-form__wrapper--cat-and-program">
+        <div class="program-form__wrapper">
           <fieldset class="program-form__fieldset program-fieldset">
             <legend class="visually-hidden">Параметры кота</legend>
             <ul class="program-fieldset__parameters-list program-fieldset__parameters-list--cat-data">
@@ -91,10 +91,28 @@
               <li class="program-fieldset__parameters-item program-text-field program-text-field--email">
                 <label class="program-text-field__label" for="email-id">e-mail:*</label>
                 <input class="program-text-field__input" type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com">
+                <svg class="program-text-field__icon program-text-field__icon--mail" width="20" stroke="#222222" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.65" y1="5.84766" x2="1.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                  <line x1="18.65" y1="5.84766" x2="18.65" y2="13.8477" stroke="#222222" stroke-width="1.3"/>
+                  <line x1="1" y1="13.1977" x2="19" y2="13.1977" stroke="#222222" stroke-width="1.3"/>
+                  <line x1="1" y1="1.19766" x2="19" y2="1.19766" stroke="#222222" stroke-width="1.3"/>
+                  <path d="M18.35 3.02975L10 9.5242L1.65 3.02975V1.49766H4.5L10 1.49766H15H18.35V3.02975Z" stroke="#222222" stroke-width="1.3"/>
+                </svg>
               </li>
               <li class="program-fieldset__parameters-item program-text-field program-text-field--phone">
-                <label class="program-text-field__label" for="phone-id">телефон:*</label>
+                <label class="program-text-field__label" for="phone-id" required >телефон:*</label>
                 <input class="program-text-field__input" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
+                <svg class="program-text-field__icon program-text-field__icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M17.9 9.75275H9.39999V10.9569H17.9L15.8 13.0641L16.7 13.9672L19.8 10.8565C19.8974 10.7263 19.95 10.5678 19.95 10.405C19.95 10.2421 19.8974 10.0837 19.8 9.95344L16.7 6.84277L15.8 7.74587L17.9 9.75275Z" fill="black"/>
+                  <path d="M8.10001 19.7872V13.5659C8.08846 13.41 8.02154 13.2635 7.91142 13.153C7.80131 13.0425 7.65531 12.9754 7.50001 12.9638H3.10001C3.10516 13.2815 3.23325 13.5848 3.45718 13.8095C3.68112 14.0342 3.98336 14.1627 4.30001 14.1679H6.80001V19.1851H3.10001C2.86326 19.2 2.62591 19.1676 2.40176 19.0896C2.17762 19.0117 1.97115 18.8898 1.79436 18.7311C1.61757 18.5723 1.47399 18.3799 1.37196 18.165C1.26992 17.9501 1.21148 17.717 1.20001 17.4793V3.43111C1.19181 2.96681 1.36516 2.51774 1.68292 2.18013C2.00069 1.84252 2.43758 1.64322 2.90001 1.62492H6.80001V6.64212H4.40001C4.08336 6.64729 3.78112 6.77581 3.55718 7.00052C3.33325 7.22523 3.20516 7.52851 3.20001 7.84625H7.60001C7.75531 7.83466 7.90131 7.76751 8.01142 7.65701C8.12154 7.54651 8.18846 7.40002 8.20001 7.24418V0.922517C8.15232 0.76584 8.06117 0.626022 7.93721 0.519407C7.81325 0.412792 7.66161 0.343785 7.50001 0.320453H3.10001C2.70599 0.307054 2.31321 0.371716 1.94411 0.510744C1.57501 0.649771 1.23684 0.860436 0.948933 1.13069C0.661026 1.40095 0.42903 1.7255 0.266207 2.08579C0.103385 2.44608 0.01293 2.83504 1.46306e-05 3.23043V17.1782C-0.0289644 17.5773 0.0246504 17.978 0.157487 18.3552C0.290324 18.7324 0.499509 19.078 0.771886 19.3701C1.04426 19.6623 1.37394 19.8947 1.74019 20.0529C2.10643 20.211 2.50132 20.2913 2.90001 20.2889H7.50001C7.5735 20.304 7.64943 20.3022 7.72216 20.2839C7.7949 20.2655 7.86259 20.2309 7.92021 20.1828C7.97783 20.1346 8.02391 20.074 8.05504 20.0055C8.08616 19.9371 8.10153 19.8624 8.10001 19.7872Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="20" height="20.0688" fill="white" transform="translate(0 0.320435)"/>
+                  </clipPath>
+                  </defs>
+                </svg>
               </li>
             </ul>
           </div>
@@ -161,7 +179,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__flex-wrapper centering-container">
           <a class="page-footer__logo" href="../index.html">
-            <svg class="page-footer__title company-name" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
               <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
               <path d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5963 11.7692H18.493Z" fill="#111111"/>

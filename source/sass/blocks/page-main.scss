@@ -62,7 +62,7 @@
   margin: 0 auto;
   background-color: $basic-green;
   background-image: url("/img/decorative/licking_cat.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
@@ -76,7 +76,7 @@
     position: static;
     grid-column: -1/-2;
     background-image: url("../img/decorative/licking_cat_desktop.jpg");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: $basic-green;

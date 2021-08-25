@@ -21,7 +21,11 @@
     left: 0;
     background-color: $basic-background;
     border-radius: 50%;
-    border: 1px solid $border-gray;
+    border: 1px solid $radio-border;
+  }
+
+  &:hover:before {
+    border: 1px solid $radio-hover-border;
   }
 }
 
@@ -35,5 +39,13 @@
   background-color: $basic-green;
   border-radius: 50%;
   border: 8px solid $basic-background;
-  box-shadow: 0 0 0 1px $border-gray;
+  box-shadow: 0 0 0 1px $radio-border;
+}
+
+.program-radio__input:checked:hover + .program-radio__label::before {
+  box-shadow: 0 0 0 1px $radio-hover-border;
+}
+
+.program-radio__input:disabled + .program-radio__label {
+  opacity: 0.3;
 }
