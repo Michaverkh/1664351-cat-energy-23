@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="../img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../img/favicons/180.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -39,9 +41,7 @@
           <h1>Функциональное<br>питание для котов</h1>
           <p>Занялся собой? Займись котом!</p>
         </div>
-        <div class="page-main__wrapper">
-          <div class="page-main__green-background"></div>
-        </div>
+        <div class="page-main__wrapper"></div>
       </header>
       <section class="programs">
         <div class="programs__wrapper centering-container">
@@ -121,12 +121,18 @@
               <div class="cat-slider__inner">
                 <div class="cat-slider__slide cat-slider__slide--after">
                   <div class="cat-slider__image-wrapper cat-slider__image-wrapper--after">
-                    <img class="cat-slider__image cat-slider__image--after" src="../img/content/cat-skinny.png" width="545" height="520" alt="стройный кот">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/after-tablet.png 1x, img/content/after-tablet@2x.png 2x">
+                      <img class="cat-slider__image cat-slider__image--after" src="../img/after-mobile.png" srcset="../img/after-mobile@2x.png 2x" width="315" height="240" alt="Стройный кот">
+                    </picture>
                   </div>
                 </div>
                 <div class="cat-slider__slide cat-slider__slide--before">
                   <div class="cat-slider__image-wrapper cat-slider__image-wrapper--before">
-                    <img class="cat-slider__image cat-slider__image--before" src="../img/content/cat-fat.png" width="677" height="520" alt="толстый кот">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/before-tablet.png 1x, img/decorative/cat-energy-tablet@2x.png 2x">
+                      <img class="cat-slider__image cat-slider__image--before" src="../img/content/before-mobile.png" srcset="../img/before-mobile@2x.png 2x" width="315" height="240" alt="Толстый кот">
+                    </picture>
                   </div>
                 </div>
                 <div class="cat-slider__divider"></div>
