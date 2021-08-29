@@ -47,12 +47,13 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    background: url("../img/decorative/logo_desktop.svg") left center no-repeat;
+    background: url("../img/decorative/logo_tablet.svg") left center no-repeat;
     padding: 24px 0 64px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 53px 0 74px 0;
+    background: url("../img/decorative/logo_desktop.svg") left center no-repeat;
   }
 }
 

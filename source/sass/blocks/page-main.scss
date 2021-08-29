@@ -37,7 +37,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/decorative/cat-energy-mobile@2x.png");
-    background-size: 560px auto;
+    // background-size: 560px auto;
   }
 
   background-position: center;
@@ -53,7 +53,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decorative/cat-energy-tablet@2x.png");
-      background-size: 1418px auto;
+      // background-size: 1418px auto;
     }
   }
 
@@ -66,7 +66,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decorative/cat-energy-desktop@2x.png");
-      background-size: 1104px auto;
+      // background-size: 1104px auto;
     }
   }
 }
@@ -78,12 +78,14 @@
   min-height: 302px;
   margin: 0 auto;
   background: url("../img/decorative/green-background.png"), url("../img/decorative/licking_cat.jpg") 50% 50% no-repeat;
+  // background-size: contain;
   background-color: darken($basic-green, 25%);
   z-index: 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/decorative/licking_cat@2x.jpg");
+    background: url("../img/decorative/green-background@2x.png"), url("../img/decorative/licking-cat@2x.jpg") 50% 50% no-repeat;
     background-size: 320px auto;
+    background-color: darken($basic-green, 25%);
   }
 
   @media (min-width: $tablet-width) {
@@ -98,8 +100,9 @@
     background-color: darken($basic-green, 25%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decorative/licking_cat_desktop@2x.jpg");
-      background-size: 1440px auto;
+      background: url("../img/decorative/green-background-desktop@2x.png"), url("../img/decorative/licking-cat-desktop@2x.jpg") right 50% no-repeat;
+      background-size: contain;
+      background-color: darken($basic-green, 25%);
     }
   }
 }
