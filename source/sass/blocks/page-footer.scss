@@ -13,6 +13,7 @@
     margin: 0;
     padding: 65px 89px 65px 76px;
     background-color: $basic-background;
+    z-index: 2;
   }
 }
 
@@ -99,12 +100,40 @@
 }
 
 .page-footer__map {
-  @include indent-reset;
-  height: 400px;
-  width: 100%;
+  position: relative;
+
+  min-width: 320px;
+  height: 362px;
+
+  & iframe {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.page-footer__map-img {
+  display: block;
   margin: 0 auto;
-  border: 0;
-  margin-bottom: -5px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-footer__wrapper {
