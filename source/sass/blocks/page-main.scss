@@ -112,6 +112,7 @@
   font-style: normal;
   width: 280px;
   margin: 0 auto;
+  padding: 0 16px;
   text-align: center;
   z-index: 1;
 
@@ -142,6 +143,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+  }
 }
 
 .page-main__description p {
@@ -154,5 +159,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
   }
 }
