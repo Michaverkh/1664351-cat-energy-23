@@ -3,18 +3,35 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: url("../img/decorative/gift-photo-mobile.png") center no-repeat;
-  background-size: cover;
+  background: url("../img/decorative/gift-mobile.jpg") center no-repeat;
+  background-size: contain;
   padding: 58px 61px 43px 58px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decorative/gift-mobile@2x.jpg");
+    background-size: contain;
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     padding: 71px 124px 78px 60px;
+    background: url("../img/decorative/gift-tablet.jpg") center no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decorative/gift-tablet@2x.jpg");
+      background-size: contain;
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding: 56px 43px 42px 41px;
+    background: url("../img/decorative/gift-desktop.jpg") center no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decorative/gift-desktop@2x.jpg");
+      background-size: contain;
+    }
   }
 }
 
