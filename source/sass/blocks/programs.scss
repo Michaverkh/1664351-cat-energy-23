@@ -1,29 +1,8 @@
 .programs__wrapper {
   position: relative;
-  padding-top: 138px;
-  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 680px;
-  }
-}
-
-.programs__button {
-  margin-bottom: 22px;
-  z-index: 4;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 91px;
-    top: -580px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 380px;
   }
 }
 
@@ -34,18 +13,15 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .programs__item {
   box-sizing: border-box;
 
-  &:first-child {
+  &:not(:last-child) {
     margin-bottom: 20px;
-
-    @media (min-width: $desktop-width) {
-      margin: 0;
-    }
   }
 
   @media (min-width: $desktop-width) {

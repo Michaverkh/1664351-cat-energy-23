@@ -24,53 +24,6 @@
   }
 }
 
-.page-main__header::before {
-  content: "";
-  position: absolute;
-  width: 280px;
-  height: 270px;
-  top: 167px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  background-image: url("../img/decorative/cat-energy-mobile.png");
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/decorative/cat-energy-mobile@2x.png");
-    // background-size: 560px auto;
-  }
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    height: 609px;
-    width: 100%;
-    top: 263px;
-    background-image: url("../img/decorative/cat-energy-tablet.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/decorative/cat-energy-tablet@2x.png");
-      // background-size: 1418px auto;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    height: 499px;
-    top: 141px;
-    background-position: 68% 0;
-    background-image: url("../img/decorative/cat-energy-desktop.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/decorative/cat-energy-desktop@2x.png");
-      // background-size: 1104px auto;
-    }
-  }
-}
-
 .page-main__wrapper {
   position: absolute;
   width: 100%;
