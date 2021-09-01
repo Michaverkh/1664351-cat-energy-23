@@ -5,6 +5,7 @@
   align-items: center;
   background: url("../img/decorative/gift-mobile.jpg") center no-repeat;
   background-size: contain;
+  background-color: $basic-green;
   padding: 58px 61px 43px 58px;
 
   @media (min-resolution: 2dppx) {
@@ -16,6 +17,7 @@
     flex-direction: row;
     padding: 71px 124px 78px 60px;
     background: url("../img/decorative/gift-tablet.jpg") center no-repeat;
+    background-color: $basic-green;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decorative/gift-tablet@2x.jpg");
@@ -27,6 +29,7 @@
     flex-direction: column;
     padding: 56px 43px 42px 41px;
     background: url("../img/decorative/gift-desktop.jpg") center no-repeat;
+    background-color: $basic-green;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decorative/gift-desktop@2x.jpg");

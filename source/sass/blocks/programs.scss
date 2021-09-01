@@ -19,10 +19,7 @@
 
 .programs__item {
   box-sizing: border-box;
-
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     width: 570px;
