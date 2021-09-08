@@ -13,6 +13,7 @@
   @media (min-width: $desktop-width) {
     padding: 15px 0;
     justify-content: flex-start;
+    align-items: flex-end;
   }
 
   &:first-child {
@@ -56,9 +57,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     margin-bottom: 0;
     margin-left: auto;
     width: 288px;
+    padding-bottom: 5px;
   }
 }
 
@@ -67,6 +70,14 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.good-item__price {
+  @media (min-width: $desktop-width) {
+    &--special {
+      padding-right: 8px;
+    }
   }
 }
 

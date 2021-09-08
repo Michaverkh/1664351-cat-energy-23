@@ -29,7 +29,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    padding: 56px 43px 42px 41px;
+    align-items: center;
+    padding: 56px 43px 28px 41px;
     background: url("../img/decorative/gift-desktop.jpg") center no-repeat;
     background-color: $basic-green;
 
