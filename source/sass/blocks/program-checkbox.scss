@@ -4,11 +4,11 @@
   padding: 5px 0 0 46px;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 0 0 59px;
+    padding: 11px 0 0 60px;
   }
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -36,7 +36,7 @@
 }
 
 .program-checkbox__input:checked + .program-checkbox__label::before {
-  background: url("../img/decorative/icon_check.svg") center no-repeat;
+  background: url("../img/decorative/icon_check.svg") left 9px center no-repeat;
   background-size: 24px 19px;
 }
 

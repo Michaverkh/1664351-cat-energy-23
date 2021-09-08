@@ -30,10 +30,11 @@
 		</div>
 	</header>
 	<main class="page-main-form">
-		<div class="program-selection__header centering-container">
+		<div class="program-selection__header centering-container--form">
 			<h1>Подбор программы</h1>
 			<p>Заполните анкету, и мы подберем
-				<br>программу питания для вашего кота</p>
+				<br>программу питания для вашего кота
+      </p>
 		</div>
 		<form class="program-selection__form program-form" method="GET" action="https://echo.htmlacademy.ru">
 			<div class="program-form__wrapper">
@@ -79,10 +80,11 @@
 			<fieldset class="program-form__fieldset program-fieldset">
 				<div class="green-line">
 					<div class="green-line__wrapper centering-container">
-						<h2 class="green-line__header">Контактные данные<br>(владельца кота)</h2></div>
-					<div class="green-line__line"></div>
+						<h2 class="green-line__header green-line__header--contacts">Контактные данные<br> <span>(владельца кота)</span></h2>
+          </div>
+					<div class="green-line__line green-line__line--contacts"></div>
 				</div>
-				<div class="centering-container">
+				<div class="centering-container--form">
 					<ul class="program-fieldset__parameters-list program-fieldset__parameters-list--contacts">
 						<li class="program-fieldset__parameters-item program-text-field program-text-field--email">
 							<label class="program-text-field__label" for="email-id">e-mail:*</label>
@@ -104,10 +106,10 @@
 			<fieldset class="program-form__fieldset program-fieldset">
 				<div class="green-line">
 					<div class="green-line__wrapper centering-container">
-						<h2 class="green-line__header">Коментарий</h2></div>
+						<h2 class="green-line__header green-line__header--comment">Комментарий</h2></div>
 					<div class="green-line__line"></div>
 				</div>
-				<div class="centering-container">
+				<div class="centering-container--form">
 					<label class="program-fieldset__label comment">
 						<textarea class="comment__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
 					</label>
@@ -116,10 +118,10 @@
 			<fieldset class="program-form__fieldset program-fieldset">
 				<div class="green-line">
 					<div class="green-line__wrapper centering-container">
-						<h2 class="green-line__header">Дополнительно</h2></div>
-					<div class="green-line__line"></div>
+						<h2 class="green-line__header green-line__header--additional">Дополнительно</h2></div>
+					<div class="green-line__line green-line__line--additional"></div>
 				</div>
-				<div class="centering-container">
+				<div class="centering-container--form">
 					<ul class="program-fieldset__parameters-list program-fieldset__parameters-list--additional">
 						<li class="program-fieldset__parameters-item program-checkbox">
 							<input class="program-checkbox__input visually-hidden" type="checkbox" name="additional-type" id="sweetener-id" value="sweetener">
@@ -140,7 +142,7 @@
 					</ul>
 				</div>
 			</fieldset>
-			<div class="program-form__button-wrapper centering-container">
+			<div class="program-form__button-wrapper centering-container--form">
 				<button class="program-form__button button" type="submit">отправить заявку</button>
 				<p class="program-form__footnote">* — Обязательные поля</p>
 			</div>

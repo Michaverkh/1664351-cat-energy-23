@@ -75,9 +75,9 @@
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
-    width: 709px;
+    width: 630px;
     margin: 0 auto;
-    padding: 32px 0 32px 0;
+    padding: 33px 0 32px 0;
     border: 1px solid $border-gray;
   }
 
@@ -87,15 +87,15 @@
 }
 
 .program-fieldset__parameters-list--additional {
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 42px;
-    column-gap: 124px;
+    column-gap: 60px;
     grid-template-rows: repeat(auto-fill, min-content);
-    margin-bottom: 59px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {

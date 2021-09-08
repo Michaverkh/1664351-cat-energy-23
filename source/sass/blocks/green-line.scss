@@ -37,6 +37,37 @@
   }
 }
 
+.green-line__header--comment {
+  padding: 25px 20px 37px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 44px 75px 40px;
+  }
+}
+
+.green-line__header--additional {
+  padding: 22px 20px 34px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 44px 56px 40px;
+  }
+}
+
+.green-line__header--contacts {
+  @media (min-width: $tablet-width) {
+    padding: 74px 44px 75px 40px;
+
+    & br {
+      display: none;
+    }
+
+    & span {
+      display: inline-block;
+      padding-left: 7px;
+    }
+  }
+}
+
 .green-line__line {
   position: absolute;
   left: 0;
@@ -67,5 +98,15 @@
     grid-area: greeny;
     height: 2px;
     background-color: $basic-green;
+  }
+}
+
+.green-line__line--contacts {
+  bottom: 47%;
+}
+
+.green-line__line--additional {
+  @media (min-width: $tablet-width) {
+    bottom: 43%;
   }
 }
