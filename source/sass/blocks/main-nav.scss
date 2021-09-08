@@ -24,7 +24,7 @@
 .main-nav__link {
   display: block;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald-medium", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -39,6 +39,9 @@
   z-index: 2;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -54,6 +57,12 @@
     &:disabled {
       opacity: 0.3;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
   }
 }
 
@@ -100,7 +109,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -45px;
+  top: -42px;
   right: 0;
   display: block;
   width: 24px;
@@ -162,6 +171,10 @@
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
+  }
+
+  .main-nav--closed.main-nav--nojs .main-nav__item {
+    display: block;
   }
 
   .main-nav__list {

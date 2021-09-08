@@ -1,33 +1,55 @@
 .item-product {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 19px 0 25px 0;
+  border-bottom: 1px solid $special-gray;
+
+  &:first-child {
+    border: 1px solid $special-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px 34px 36px;
+    background-color: $basic-gray;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 36px 38px 36px;
+  }
+}
+
+.item-product__wrapper {
+  width: 280px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content min-content;
   grid-template-areas: "l h" "l t" "b b";
-  grid-row-gap: 15px;
-  box-sizing: border-box;
-  padding: 19px 0 25px 0;
+  // grid-row-gap: 15px;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    min-height: 390px;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 36px 39px 36px;
     grid-row-gap: 0;
-    background-color: $basic-gray;
-    min-height: 430px;
   }
 }
 
 .item-product__header {
   @include indent-reset;
   width: 76px;
+  margin-bottom: 14px;
   grid-area: h;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-bottom: 21px;
+    margin-bottom: 17px;
     width: 150px;
     text-align: center;
   }
@@ -50,31 +72,43 @@
 
 .item-product__logo {
   @media (min-width: $tablet-width) {
-    // position: absolute;
-    // right: 0;
-    // bottom: 0;
-    // left: 50%;
-    // transform: translateX(-50%);
-    margin-top: -50%;
+    // margin-top: -50%;
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform:translateX(-50%);
+
   }
 }
 
 .item-product:nth-child(2n) .item-product__logo {
+    width: 84px;
+    height: 100px;
+
   @media (min-width: $tablet-width) {
     width: 168px;
     height: 206px;
+    bottom: -5px;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
+    bottom: 7px;
   }
 }
 
 .item-product:nth-child(2n+1) .item-product__logo {
+  width: 68px;
+  height: 86px;
+
   @media (min-width: $tablet-width) {
     width: 161px;
     height: 172px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 7px;
   }
 }
 
@@ -98,6 +132,7 @@
 .item-product__table {
   grid-area: t;
   z-index: 1;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -106,6 +141,8 @@
 }
 
 .item-product .item-product__button {
+  font-size: 16px;
+  line-height: 20px;
   grid-area: b;
   width: auto;
   z-index: 1;

@@ -1,6 +1,6 @@
 .socials {
   width: 280px;
-  padding: 20px 0;
+  padding: 16px 0 12px 0;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
@@ -21,6 +21,13 @@
   display: block;
   text-decoration: none;
 
+  & svg {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
   &:hover svg {
     stroke: $basic-green;
   }
@@ -33,6 +40,13 @@
 .socials__link--fb {
   fill: none;
   stroke: $basic-font;
+
+  & svg {
+    @media (min-width: $tablet-width) {
+      width: 28px;
+      height: 33px;
+    }
+  }
 }
 
 .socials__link.socials__link--fb {

@@ -12,8 +12,12 @@
 
   @media (min-width: $tablet-width) {
     width: 677px;
-    height: 462px;
+    height: 464px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 670px;
+  // }
 }
 
 .cat-slider__inner {
@@ -28,6 +32,12 @@
     overflow: hidden;
     height: 520px;
     top: -179px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+    top: -195px;
   }
 }
 
