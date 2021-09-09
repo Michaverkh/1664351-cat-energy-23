@@ -102,14 +102,14 @@
   border-radius: 50%;
   background-color: $basic-green;
   border: 12px solid $basic-background;
-  box-shadow: 0 0 0 1px $range-background, 0px 2px 3px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 0 1px $range-background, 0 2px 3px 0 rgba(0, 0, 0, 0.16);
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 0 1px $range-background, 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 0 1px $range-background, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
   }
 
   &:active {
-    box-shadow: 0 0 0 1px $basic-green, 0px 3px 4px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 0 1px $basic-green, 0 3px 4px 0 rgba(0, 0, 0, 0.19);
   }
 }

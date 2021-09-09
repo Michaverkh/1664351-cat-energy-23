@@ -17,15 +17,6 @@
   position: relative;
 
   &::before {
-    // content: "";
-    // position: absolute;
-    // width: 30px;
-    // height: 30px;
-    // top: 0;
-    // left: 0;
-    // background-color: $basic-background;
-    // border-radius: 50%;
-    // border: 1px solid $radio-border;
     content: "";
     position: absolute;
     width: 14px;
@@ -38,10 +29,6 @@
     box-shadow: 0 0 0 1px $radio-border;
 
     @media (min-width: $tablet-width) {
-      // width: 40px;
-      // height: 40px;
-      // left: -16px;
-      // top: -4px;
       width: 18px;
       height: 18px;
       top: -2px;
@@ -50,8 +37,8 @@
     }
   }
 
-  &:hover:before {
-    border: 1px solid $radio-hover-border;
+  &:hover::before {
+    box-shadow: 0 0 0 1px $radio-hover-border;
   }
 }
 

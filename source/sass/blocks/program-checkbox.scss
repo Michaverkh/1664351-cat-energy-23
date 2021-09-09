@@ -31,13 +31,18 @@
   }
 }
 
-.program-checkbox__label:hover:before {
+.program-checkbox__label:hover::before {
   border: 1px solid $radio-hover-border;
 }
 
 .program-checkbox__input:checked + .program-checkbox__label::before {
-  background: url("../img/decorative/icon_check.svg") left 9px center no-repeat;
-  background-size: 24px 19px;
+  background: url("../img/decorative/icon_check.svg") left 4px center no-repeat;
+  background-size: 18px 14px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/decorative/icon_check.svg") left 9px center no-repeat;
+    background-size: 24px 19px;
+  }
 }
 
 .program-checkbox__input:disabled + .program-checkbox__label {
