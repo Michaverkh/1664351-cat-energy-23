@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 36px 38px 36px;
+    padding: 0 38px 38px 39px;
   }
 }
 
@@ -109,6 +109,43 @@
 
   @media (min-width: $desktop-width) {
     bottom: 7px;
+  }
+}
+
+.item-product__logo--pro-500-chicken {
+  margin-bottom: 5px;
+}
+
+.item-product .item-product__logo.item-product__logo--pro-500-fish {
+  width: 68px;
+  height: 78px;
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.item-product .item-product__logo.item-product__logo--slim-500-backwheet {
+  width: 68px;
+  height: 78px;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.item-product .item-product__logo.item-product__logo--slim-500-rice {
+  width: 72px;
+  height: 84px;
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
   }
 }
 

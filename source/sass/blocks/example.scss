@@ -1,14 +1,15 @@
 .example {
   background-color: $slider-gradient;
   position: relative;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-background;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $slider-gradient 72%, $basic-gray 72%);
+    background: linear-gradient(to right, $slider-gradient 70%, $basic-gray 70%);
     padding: 0;
   }
 }

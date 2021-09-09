@@ -6,7 +6,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 161px 0 38px 0;
-    background: url("../img/decorative/plus.svg") center top 85px no-repeat;
+    background: url("../img/decorative/plus.svg") center top 52px no-repeat;
+    background-size: 60px 60px;
     border: 2px solid $basic-gray;
   }
 
@@ -80,6 +81,12 @@
 
   &:active {
     color: $basic-font-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    width: 249px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

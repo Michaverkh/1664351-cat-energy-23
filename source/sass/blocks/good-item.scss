@@ -74,6 +74,12 @@
 }
 
 .good-item__price {
+  @media (min-width: $tablet-width) {
+    &--special {
+      padding-left: 8px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     &--special {
       padding-right: 8px;

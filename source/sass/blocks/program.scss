@@ -50,12 +50,13 @@
   margin-left: 71px;
   text-transform: uppercase;
   color: $headers-font;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
