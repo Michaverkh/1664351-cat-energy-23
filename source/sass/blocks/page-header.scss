@@ -17,7 +17,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: center;
     width: 1220px;
+    padding-top: 50px;
   }
 }
 
@@ -34,8 +36,8 @@
 .page-header__logo {
   display: block;
   justify-content: flex-start;
-  padding: 23px 0 24px 90px;
-  background: url("../img/decorative/logo_mobile.svg") left center no-repeat;
+  padding: 23px 0 19px 90px;
+  background: url("../img/decorative/logo_mobile.svg") left bottom 16px no-repeat;
 
   &:hover {
     opacity: 0.8;
@@ -48,11 +50,13 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     background: url("../img/decorative/logo_tablet.svg") left center no-repeat;
-    padding: 24px 0 64px 0;
+    padding: 33px 0 64px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 53px 0 74px 0;
+    width: 202px;
+    height: 59px;
+    padding: 0;
     background: url("../img/decorative/logo_desktop.svg") left center no-repeat;
   }
 }

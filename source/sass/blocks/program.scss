@@ -4,7 +4,7 @@
   padding: 30px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 55px 51px;
+    padding: 77px 52px 58px 51px;
   }
 
   &:first-child {
@@ -50,16 +50,17 @@
   margin-left: 71px;
   text-transform: uppercase;
   color: $headers-font;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 214px;
+    margin-left: 165px;
     margin-bottom: 73px;
   }
 }
@@ -80,12 +81,12 @@
     width: 340px;
     border: none;
     padding: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 
@@ -102,6 +103,12 @@
   text-transform: uppercase;
   text-decoration: none;
   width: 150px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 170px;
+  }
 }
 
 .program__arrow {
@@ -110,6 +117,14 @@
   height: 10px;
   margin-left: 15px;
   background: url("../img/decorative/icon_arrow.svg") center left no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
+  }
 
   .program__link:hover & {
     background: url("../img/decorative/icon_arrow_l.svg") center left no-repeat;

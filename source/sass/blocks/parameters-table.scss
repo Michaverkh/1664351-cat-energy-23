@@ -1,11 +1,12 @@
 .parameters-table {
   border-collapse: collapse;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -16,6 +17,8 @@
 }
 
 .parameters-table__row td {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     padding: 5px 0;
   }

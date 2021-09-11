@@ -14,15 +14,27 @@
 
 .program-text-field__input {
   width: 100%;
-  padding: 14px;
+  padding: 14px 14px 10px 14px;
   box-sizing: border-box;
+  border: 2px solid $center-border;
 
-  &:invalid {
+  &--error {
     border: 2px solid $error;
   }
 
+  &:hover {
+    border: 2px solid $border-gray;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid $basic-font;
+    border-radius: none;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 10px 20px;
+    padding: 15px 14px 10px 18px;
   }
 }
 
@@ -30,6 +42,10 @@
   margin-right: 13px;
   white-space: nowrap;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .program-text-field.program-text-field--email {
@@ -56,12 +72,20 @@
   }
 }
 
-.program-text-field__input:focus + .program-text-field__icon > * {
+.program-text-field__icon--mail {
+  fill: none;
+}
+
+.program-text-field__input:focus + .program-text-field__icon {
   stroke: $basic-green;
+}
+
+.program-text-field__input--error + .program-text-field__icon {
+  stroke: $error;
 }
 
 .program-text-field__icon {
   position: absolute;
   right: 14px;
-  top: 14px;
+  top: 18px;
 }

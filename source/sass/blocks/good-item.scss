@@ -1,18 +1,19 @@
 .good-item {
   box-sizing: border-box;
-  padding: 13px 0 19px 0;
+  padding: 13px 0 17px 0;
   border-bottom: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 26px 38px 28px 38px;
+    padding: 28px 38px 27px 38px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 15px 0;
     justify-content: flex-start;
+    align-items: flex-end;
   }
 
   &:first-child {
@@ -29,11 +30,12 @@
   line-height: 16px;
   color: $headers-font;
   text-transform: uppercase;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 16px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,17 +48,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
     margin-bottom: 0;
     margin-left: auto;
     width: 288px;
+    padding-bottom: 5px;
   }
 }
 
@@ -68,8 +73,24 @@
   }
 }
 
-.good-item__order-button {
+.good-item__price {
+  @media (min-width: $tablet-width) {
+    &--special {
+      padding-left: 8px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--special {
+      padding-right: 8px;
+    }
+  }
+}
+
+.good-item .good-item__order-button {
   flex-basis: 100%;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $desktop-width) {
     flex-basis: 244px;

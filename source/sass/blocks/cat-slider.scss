@@ -2,7 +2,7 @@
   background-color: $slider-gradient;
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to right, $slider-gradient 55%, $basic-gray 0);
+    background: linear-gradient(to right, $slider-gradient 58%, $basic-gray 0);
   }
 }
 
@@ -14,6 +14,10 @@
     width: 677px;
     height: 462px;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 670px;
+  // }
 }
 
 .cat-slider__inner {
@@ -28,6 +32,12 @@
     overflow: hidden;
     height: 520px;
     top: -179px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
+    top: -195px;
   }
 }
 

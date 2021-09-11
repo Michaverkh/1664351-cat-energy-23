@@ -1,10 +1,10 @@
 .item-composition {
   position: relative;
-  padding: 0 0 0 80px;
+  padding: 2px 0 0 80px;
 
   @media (min-width: $tablet-width) {
-    width: 230px;
-    padding: 111px 0 57px 0;
+    width: 245px;
+    padding: 112px 0 57px 0;
     background: url("../img/decorative/icon_leaf.svg") right center no-repeat;
   }
 }
@@ -28,7 +28,7 @@
 
 .item-composition--leaf {
   @media (min-width: $tablet-width) {
-    background: url("../img/decorative/1.png") right top no-repeat;
+    background: url("../img/decorative/1.png") right 48px top no-repeat;
   }
 
   &::before {
@@ -38,7 +38,7 @@
 
 .item-composition--tub {
   @media (min-width: $tablet-width) {
-    background: url("../img/decorative/2.png") right top no-repeat;
+    background: url("../img/decorative/2.png") right 10px top no-repeat;
   }
 
   &::before {
@@ -48,7 +48,7 @@
 
 .item-composition--eat {
   @media (min-width: $tablet-width) {
-    background: url("../img/decorative/3.png") right top no-repeat;
+    background: url("../img/decorative/3.png") right 9px top no-repeat;
   }
 
   &::before {
@@ -63,6 +63,14 @@
 
   &::before {
     background-image: url("../img/decorative/icon_alarm.svg");
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: initial;
+    }
   }
 }
 

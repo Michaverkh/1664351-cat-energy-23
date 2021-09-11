@@ -17,12 +17,12 @@
     grid-template-columns: 162px 162px;
     grid-template-rows: min-content min-content;
     grid-template-areas: "weight time" "money money";
-    row-gap: 55px;
+    row-gap: 35px;
   }
 }
 
 .results-list__item:not(:last-child) {
-  padding-top: 15px;
+  padding-top: 16px;
   background: url("../img/decorative/weight_back.svg") top center no-repeat;
   background-size: 124px 64px;
 
@@ -41,7 +41,7 @@
     font-weight: 400;
     line-height: 24px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
@@ -101,7 +101,7 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     margin-left: auto;
-    padding-top: 15px;
+    padding-top: 8px;
     text-align: right;
   }
 
@@ -121,6 +121,7 @@
 
     @media (min-width: $tablet-width) {
       font-size: 20px;
+      line-height: 26px;
     }
   }
 
