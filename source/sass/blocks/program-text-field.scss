@@ -16,9 +16,21 @@
   width: 100%;
   padding: 14px 14px 10px 14px;
   box-sizing: border-box;
+  border: 2px solid $center-border;
 
-  &:invalid {
+  &--error {
     border: 2px solid $error;
+  }
+
+  &:hover {
+    border: 2px solid $border-gray;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: 2px solid $basic-font;
+    border-radius: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,8 +72,16 @@
   }
 }
 
-.program-text-field__input:focus + .program-text-field__icon > * {
+.program-text-field__icon--mail {
+  fill: none;
+}
+
+.program-text-field__input:focus + .program-text-field__icon {
   stroke: $basic-green;
+}
+
+.program-text-field__input--error + .program-text-field__icon {
+  stroke: $error;
 }
 
 .program-text-field__icon {

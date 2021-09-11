@@ -29,22 +29,6 @@
   color: $headers-font;
 }
 
-.program-fieldset input {
-  border: 2px solid $center-border;
-  box-sizing: border-box;
-
-  &:hover {
-    border: 2px solid $border-gray;
-  }
-
-  &:focus,
-  &:active {
-    outline: none;
-    border: 2px solid $basic-font;
-    border-radius: none;
-  }
-}
-
 .program-fieldset input::placeholder {
   color: $basic-font;
 }
@@ -86,7 +70,7 @@
 }
 
 .program-fieldset__parameters-list--additional {
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     display: grid;

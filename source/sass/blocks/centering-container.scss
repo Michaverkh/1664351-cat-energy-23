@@ -25,6 +25,9 @@
 }
 
 .centering-container.centering-container--special {
+  list-style: none;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     width: 630px;
   }
