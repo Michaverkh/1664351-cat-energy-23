@@ -40,7 +40,7 @@
 
 .example__header {
   @include indent-reset;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;

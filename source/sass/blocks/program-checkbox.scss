@@ -36,11 +36,11 @@
 }
 
 .program-checkbox__input:checked + .program-checkbox__label::before {
-  background: url("../img/decorative/icon_check.svg") left 4px center no-repeat;
+  background: url("../img/decorative/check.svg") left 4px center no-repeat;
   background-size: 18px 14px;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/decorative/icon_check.svg") left 9px center no-repeat;
+    background: url("../img/decorative/check.svg") left 9px center no-repeat;
     background-size: 24px 19px;
   }
 }

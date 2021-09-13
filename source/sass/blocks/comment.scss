@@ -1,4 +1,5 @@
 .comment__textarea {
+  outline: none;
   width: 100%;
   box-sizing: border-box;
   height: 150px;
@@ -13,5 +14,9 @@
 
   &::placeholder {
     color: $basic-font;
+  }
+
+  &:active {
+    border: 1px solid $basic-font;
   }
 }

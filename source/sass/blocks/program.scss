@@ -44,7 +44,7 @@
 
 .program__header {
   @include indent-reset;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   margin-left: 71px;
@@ -95,7 +95,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -116,7 +116,7 @@
   width: 32px;
   height: 10px;
   margin-left: 15px;
-  background: url("../img/decorative/icon_arrow.svg") center left no-repeat;
+  background: url("../img/decorative/arrow.svg") center left no-repeat;
 
   @media (min-width: $tablet-width) {
     margin-left: 25px;
@@ -127,7 +127,7 @@
   }
 
   .program__link:hover & {
-    background: url("../img/decorative/icon_arrow_l.svg") center left no-repeat;
+    background: url("../img/decorative/arrow-1.svg") center left no-repeat;
   }
 }
 

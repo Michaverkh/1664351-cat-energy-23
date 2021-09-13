@@ -1,7 +1,7 @@
 .item-product {
   list-style: none;
   box-sizing: border-box;
-  padding: 19px 0 25px 0;
+  padding: 19px 0 26px 0;
   border-bottom: 1px solid $special-gray;
 
   &:first-child {
@@ -150,7 +150,7 @@
 
 .item-product__header a {
   @include indent-reset;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

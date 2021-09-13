@@ -445,7 +445,7 @@ template {
 .example__header {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -523,7 +523,7 @@ template {
       margin-bottom: 204px; } }
 
 .how-its-working__header {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -579,7 +579,7 @@ template {
 .program__header {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   margin-left: 71px;
@@ -626,7 +626,7 @@ template {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -645,7 +645,7 @@ template {
   width: 32px;
   height: 10px;
   margin-left: 15px;
-  background: url("../img/decorative/icon_arrow.svg") center left no-repeat; }
+  background: url("../img/decorative/arrow.svg") center left no-repeat; }
   @media (min-width: 768px) {
     .program__arrow {
       margin-left: 25px; } }
@@ -653,7 +653,7 @@ template {
     .program__arrow {
       margin-left: 30px; } }
   .program__link:hover .program__arrow {
-    background: url("../img/decorative/icon_arrow_l.svg") center left no-repeat; }
+    background: url("../img/decorative/arrow-1.svg") center left no-repeat; }
 
 .program__link:active {
   opacity: 0.3; }
@@ -704,7 +704,7 @@ template {
       transform: translate(54px, -187px); } }
 
 .range-control__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -829,7 +829,7 @@ template {
   display: block;
   text-align: center; }
   .results-list__item:not(:last-child) span:first-child {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
@@ -889,7 +889,7 @@ template {
       padding-top: 15px;
       text-align: left; } }
   .results-list__item.results-list__item--spending-money span {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -932,28 +932,28 @@ template {
     background: url("../img/decorative/1.png") right 48px top no-repeat; } }
 
 .item-composition--leaf::before {
-  background-image: url("../img/decorative/icon_leaf.svg"); }
+  background-image: url("../img/decorative/leaf.svg"); }
 
 @media (min-width: 768px) {
   .item-composition--tub {
     background: url("../img/decorative/2.png") right 10px top no-repeat; } }
 
 .item-composition--tub::before {
-  background-image: url("../img/decorative/icon_tub.svg"); }
+  background-image: url("../img/decorative/tub.svg"); }
 
 @media (min-width: 768px) {
   .item-composition--eat {
     background: url("../img/decorative/3.png") right 9px top no-repeat; } }
 
 .item-composition--eat::before {
-  background-image: url("../img/decorative/icon_eat.svg"); }
+  background-image: url("../img/decorative/eat.svg"); }
 
 @media (min-width: 768px) {
   .item-composition--alarm {
     background: url("../img/decorative/4.png") right top no-repeat; } }
 
 .item-composition--alarm::before {
-  background-image: url("../img/decorative/icon_alarm.svg"); }
+  background-image: url("../img/decorative/alarm.svg"); }
 
 .item-composition--alarm br {
   display: none; }
@@ -978,7 +978,7 @@ template {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -1056,7 +1056,7 @@ template {
 .item-product {
   list-style: none;
   box-sizing: border-box;
-  padding: 19px 0 25px 0;
+  padding: 19px 0 26px 0;
   border-bottom: 1px solid #ebebeb; }
   .item-product:first-child {
     border: 1px solid #ebebeb; }
@@ -1179,7 +1179,7 @@ template {
 .item-product__header a {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1242,7 +1242,7 @@ template {
   margin: 0 auto;
   width: 204px;
   margin-bottom: 8px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1330,7 +1330,7 @@ template {
 .good-item__header {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1429,7 +1429,7 @@ template {
 .order-all__icon {
   width: 78px;
   height: 80px;
-  background: url("../img/decorative/icon_gift.svg") center no-repeat;
+  background: url("../img/decorative/gift.svg") center no-repeat;
   margin-bottom: 32px; }
 
 .order-all__text {
@@ -1459,7 +1459,7 @@ template {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -1482,7 +1482,7 @@ template {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1546,7 +1546,7 @@ template {
 .program-fieldset {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1563,7 +1563,7 @@ template {
 
 .program-fieldset__legend {
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -1635,7 +1635,7 @@ template {
   position: relative;
   min-height: 302px;
   padding-top: 27px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: white;
   width: 100%; }
   @media (min-width: 768px) {
@@ -1736,6 +1736,7 @@ template {
       width: 450px; } }
 
 .comment__textarea {
+  outline: none;
   width: 100%;
   box-sizing: border-box;
   height: 150px;
@@ -1748,6 +1749,8 @@ template {
       padding: 14px 19px 14px 19px; } }
   .comment__textarea::placeholder {
     color: #444444; }
+  .comment__textarea:active {
+    border: 1px solid #444444; }
 
 .program-text-field {
   position: relative;
@@ -1904,11 +1907,11 @@ template {
   border: 1px solid #bababa; }
 
 .program-checkbox__input:checked + .program-checkbox__label::before {
-  background: url("../img/decorative/icon_check.svg") left 4px center no-repeat;
+  background: url("../img/decorative/check.svg") left 4px center no-repeat;
   background-size: 18px 14px; }
   @media (min-width: 768px) {
     .program-checkbox__input:checked + .program-checkbox__label::before {
-      background: url("../img/decorative/icon_check.svg") left 9px center no-repeat;
+      background: url("../img/decorative/check.svg") left 9px center no-repeat;
       background-size: 24px 19px; } }
 
 .program-checkbox__input:disabled + .program-checkbox__label {
@@ -1917,7 +1920,7 @@ template {
 .button {
   display: block;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1985,7 +1988,7 @@ template {
 .main-nav__link {
   display: block;
   box-sizing: border-box;
-  font-family: "Oswald-medium", sans-serif;
+  font-family: "Oswald-medium", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -2001,7 +2004,7 @@ template {
   @media (min-width: 768px) {
     .main-nav__link {
       box-sizing: border-box;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
@@ -2172,7 +2175,7 @@ template {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2433,7 +2436,7 @@ template {
   padding: 0;
   display: inline-block;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -2549,7 +2552,7 @@ template {
 
 .header-bottom__description {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: white;
   font-style: normal;
   width: 280px;
