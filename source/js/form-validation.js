@@ -5,7 +5,6 @@ if (form) {
   let submit = form.querySelector(".program-form__button");
 
   submit.addEventListener("click", function() {
-    console.log('кнопка нажата');
     for (let input of inputs) {
       if (input.checkValidity() == false) {
         input.classList.add("program-text-field__input--error");

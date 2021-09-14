@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="../fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
   <link rel="icon" href="../img/favicons/favicon.ico">
   <link rel="icon" href="../img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../img/favicons/180.png">
@@ -129,7 +130,7 @@
               <button class="range-control__button range-control__button--old" type="button">Было</button>
               <div class="range-control__bar">
                 <div class="range-control__tougle"></div>
-                <div class="range-control__tougle range-control__button--disabled"></div>
+                <div class="range-control__tougle range-control__tougle--disabled"></div>
               </div>
               <input class="range-control__input" type="range" min="1" max="100" id="size" value="51">
               <button class="range-control__button range-control__button--new" type="button">Стало</button>
@@ -179,10 +180,13 @@
               </svg> <span class="visually-hidden">Facebook</span></a>
           </div>
         </div>
-        <div class="page-footer__copyright copyright"><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <svg class="copyright__logo" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo_academy"></use>
-          </svg>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__logo" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo_academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

@@ -32,6 +32,10 @@
   border-bottom: 1px dotted $border-gray;
   background-color: transparent;
 
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
   &:hover {
     border-bottom: 1px solid $border-gray;
   }
@@ -72,7 +76,7 @@
   }
 }
 
-.range-control__button--disabled {
+.range-control__tougle--disabled {
   background-color: transparent;
 }
 
@@ -83,6 +87,10 @@
   height: 6px;
   border-radius: 3px;
   background-color: $range-background;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: none;
@@ -106,6 +114,10 @@
   border: 12px solid $basic-background;
   box-shadow: 0 0 0 1px $range-background, 0 2px 3px 0 rgba(0, 0, 0, 0.16);
   cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
 
   &:hover {
     box-shadow: 0 0 0 1px $range-background, 0 3px 4px 0 rgba(0, 0, 0, 0.19);

@@ -104,6 +104,10 @@
   text-decoration: none;
   width: 150px;
 
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;

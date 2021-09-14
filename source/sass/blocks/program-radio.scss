@@ -1,4 +1,7 @@
 .program-radio {
+  @include indent-reset;
+  padding: 0 0 0 45px;
+
   &:not(:last-child) {
     margin-bottom: 25px;
 
@@ -8,21 +11,22 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 45px;
+    padding: 0 0 0 85px;
   }
 }
 
 .program-radio__label {
-  padding: 3px 0 9px 45px;
+  box-sizing: border-box;
   position: relative;
+  border: 2px solid transparent;
 
   &::before {
     content: "";
     position: absolute;
     width: 14px;
     height: 14px;
-    top: 1px;
-    left: 1px;
+    top: -3px;
+    left: -46px;
     background-color: $basic-background;
     border-radius: 50%;
     border: 8px solid $basic-background;
@@ -31,8 +35,8 @@
     @media (min-width: $tablet-width) {
       width: 18px;
       height: 18px;
-      top: -2px;
-      left: -16px;
+      top: -3px;
+      left: -57px;
       border: 11px solid $basic-background;
     }
   }
@@ -47,8 +51,8 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 1px;
-  left: 1px;
+  top: -3px;
+  left: -46px;
   background-color: $basic-green;
   border-radius: 50%;
   border: 8px solid $basic-background;
@@ -57,8 +61,8 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    top: -2px;
-    left: -16px;
+    top: -3px;
+    left: -57px;
     border: 11px solid $basic-background;
   }
 }
@@ -69,4 +73,8 @@
 
 .program-radio__input:disabled + .program-radio__label {
   opacity: 0.3;
+}
+
+.program-radio__input:focus-visible + .program-radio__label {
+  border: 2px solid $basic-font;
 }

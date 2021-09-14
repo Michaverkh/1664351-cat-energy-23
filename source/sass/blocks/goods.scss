@@ -1,7 +1,14 @@
-.goods_container.centering-container {
-  @media (max-width: $mobile-width-only) {
-    width: 100%;
-    margin: 0;
+.goods__container {
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 

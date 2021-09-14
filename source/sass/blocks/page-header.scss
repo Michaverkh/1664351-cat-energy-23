@@ -47,6 +47,10 @@
     opacity: 0.6;
   }
 
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     background: url("../img/decorative/logo_tablet.svg") left center no-repeat;

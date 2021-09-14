@@ -16,7 +16,7 @@
     color: $basic-font;
   }
 
-  &:active {
+  &:focus-visible {
     border: 1px solid $basic-font;
   }
 }

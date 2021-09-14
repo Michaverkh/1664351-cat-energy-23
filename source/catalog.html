@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="../fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin>
   <link rel="icon" href="../img/favicons/favicon.ico">
   <link rel="icon" href="../img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../img/favicons/180.png">
@@ -32,7 +33,7 @@
   <main class="page-main-catalog">
     <h1 class="visually-hidden">Список товаров</h1>
     <section class="goods">
-      <div class="goods_container centering-container">
+      <div class="goods__container">
         <div class="centering-container">
           <h2 class="goods__header">Каталог продукции</h2>
         </div>
@@ -336,10 +337,13 @@
               </svg> <span class="visually-hidden">Facebook</span></a>
           </div>
         </div>
-        <div class="page-footer__copyright copyright"><a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <svg class="copyright__logo" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo_academy"></use>
-          </svg>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <svg class="copyright__logo" width="27" height="34" fill="#666666" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo_academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

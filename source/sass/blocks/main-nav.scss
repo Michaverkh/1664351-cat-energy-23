@@ -38,6 +38,10 @@
   border-top: 1px solid $border-gray;
   z-index: 2;
 
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
     font-family: "Oswald", "Arial", sans-serif;
@@ -118,6 +122,10 @@
   background-color: $basic-background;
   z-index: 3;
 
+  &:focus-visible {
+    outline: 2px solid $basic-font;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -172,7 +180,7 @@
     display: none;
   }
 
-  .main-nav--closed.main-nav--nojs .main-nav__item {
+  .main-nav--nojs .main-nav__item {
     display: block;
   }
 

@@ -1,4 +1,4 @@
-.program-selection__header {
+.page-main-form__header {
   padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +6,7 @@
   }
 }
 
-.program-selection__header h1 {
+.page-main-form__header h1 {
   @include indent-reset;
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
@@ -31,7 +31,7 @@
   }
 }
 
-.program-selection__header p {
+.page-main-form__header p {
   @include indent-reset;
   display: block;
   font-family: "Oswald", "Arial", sans-serif;
