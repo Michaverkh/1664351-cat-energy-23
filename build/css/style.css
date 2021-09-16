@@ -1170,30 +1170,30 @@ template {
 .item-product__logo--pro-500-chicken {
   margin-bottom: 5px; }
 
-.item-product .item-product__logo.item-product__logo--pro-500-fish {
+.item-product .item-product__logo--pro-500-fish {
   width: 68px;
   height: 78px;
   margin-top: 5px; }
   @media (min-width: 768px) {
-    .item-product .item-product__logo.item-product__logo--pro-500-fish {
+    .item-product .item-product__logo--pro-500-fish {
       width: 161px;
       height: 172px; } }
 
-.item-product .item-product__logo.item-product__logo--slim-500-backwheet {
+.item-product .item-product__logo--slim-500-backwheet {
   width: 68px;
   height: 78px;
   margin-top: 14px; }
   @media (min-width: 768px) {
-    .item-product .item-product__logo.item-product__logo--slim-500-backwheet {
+    .item-product .item-product__logo--slim-500-backwheet {
       width: 161px;
       height: 172px; } }
 
-.item-product .item-product__logo.item-product__logo--slim-500-rice {
+.item-product .item-product__logo--slim-500-rice {
   width: 72px;
   height: 84px;
   margin-top: 10px; }
   @media (min-width: 768px) {
-    .item-product .item-product__logo.item-product__logo--slim-500-rice {
+    .item-product .item-product__logo--slim-500-rice {
       width: 161px;
       height: 172px; } }
 
